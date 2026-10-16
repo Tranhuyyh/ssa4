@@ -111,7 +111,7 @@ html{-webkit-text-size-adjust:100%}body{overflow-x:clip}img,svg,video,iframe{max
 .brief summary{cursor:pointer;font:800 18px 'Bricolage Grotesque',sans-serif;padding:8px 0;list-style:none;display:flex;justify-content:space-between;align-items:center}.brief summary::-webkit-details-marker{display:none}
 .brief summary::after{content:"+";width:32px;height:32px;border-radius:50%;border:3px solid var(--ln);background:var(--c);display:grid;place-items:center;transition:.3s}.brief[open] summary::after{content:"–";transform:rotate(180deg)}
 .brief ul{margin:4px 0 12px 20px;animation:pin .4s}.brief li{margin:6px 0}
-</style></head><body><svg width="0" height="0" style="position:absolute"
+.tc{cursor:default}.tc .brief{margin:12px 0 0;padding:2px 12px;box-shadow:3px 3px 0 var(--ln);font-size:14px}.tc .brief summary{font-size:15px}.tc .brief summary::after{width:26px;height:26px;flex:none}.tc .brief:hover{transform:none}.tc .brief ul{margin-left:16px}</style></head><body><svg width="0" height="0" style="position:absolute"
       aria-hidden="true"><defs><g id="fc"><circle class="ey" cx="39" cy="58"
             r="4.5" /><circle class="ey" cx="61" cy="58" r="4.5" /><circle
             cx="37.5" cy="56.5" r="1.6" fill="#fff" /><circle cx="59.5"
@@ -152,23 +152,8 @@ html{-webkit-text-size-adjust:100%}body{overflow-x:clip}img,svg,video,iframe{max
             cy="42" rx="5" ry="3.5" fill="#0002" /><ellipse cx="72" cy="82"
             rx="6" ry="3.5" fill="#0002" /><use
             href="#fc" /></symbol></defs></svg><div id="pg"></div>
-    <nav><div class="w"><b class="nm">TIME SMART</b><div class="ln"><a
-            class="pl" href="#s1" style="--c:var(--kim)">1</a><a class="pl"
-            href="#s2" style="--c:var(--hoa)">2</a><a class="pl" href="#s3"
-            style="--c:var(--thuy)">3</a><a class="pl" href="#s4"
-            style="--c:var(--tho)">4</a><a class="pl" href="#s5"
-            style="--c:var(--moc)">5</a><a class="pl rg" id="reg" href="#" hidden aria-label="Đăng ký">Đăng ký ↗</a></div></div></nav>
-    <aside id="rail" aria-hidden="true"><i id="rf"></i><button data-go="1"
-        style="--c:var(--kim)" aria-label="1"><svg class="sp"
-          viewBox="0 0 100 100"><use href="#sp-kim" /></svg></button><button
-        data-go="2" style="--c:var(--hoa)" aria-label="2"><svg class="sp"
-          viewBox="0 0 100 100"><use href="#sp-hoa" /></svg></button><button
-        data-go="3" style="--c:var(--thuy)" aria-label="3"><svg class="sp"
-          viewBox="0 0 100 100"><use href="#sp-thuy" /></svg></button><button
-        data-go="4" style="--c:var(--tho)" aria-label="4"><svg class="sp"
-          viewBox="0 0 100 100"><use href="#sp-tho" /></svg></button><button
-        data-go="5" style="--c:var(--moc)" aria-label="5"><svg class="sp"
-          viewBox="0 0 100 100"><use href="#sp-moc" /></svg></button></aside>
+    <nav><div class="w"><b class="nm">TIME SMART</b><div class="ln"><a class="pl" href="#s1" style="--c:var(--kim)">1</a><a class="pl" href="#s2" style="--c:var(--hoa)">2</a><a class="pl" href="#s3" style="--c:var(--thuy)">3</a><a class="pl" href="#s4" style="--c:var(--tho)">4</a><a class="pl" href="#s5" style="--c:var(--moc)">5</a><a class="pl rg" id="reg" href="#" hidden aria-label="Đăng ký">Đăng ký ↗</a></div></div></nav>
+    
     <header class="hero" data-c="kim"><div class="fall" id="fall"></div><div
         class="w"><div class="spi" aria-hidden="true"><svg class="sp"
             viewBox="0 0 100 100" style="animation-delay:0.0s"><use
@@ -202,13 +187,14 @@ html{-webkit-text-size-adjust:100%}body{overflow-x:clip}img,svg,video,iframe{max
           Time-Blocking ★ Buffer Block ★ Ma trận Eisenhower ★ 3 Whys ★ Pomodoro
           ★ Google Calendar ★ Digital Minimalism ★ </span></div></div>
     <section id="intro" data-c="kim"><div class="w"><div class="sh2 rv"><h2>VIDEO TÌNH HUỐNG: 24 GIỜ ĐI ĐÂU MẤT?</h2></div><div class="slot intro" data-intro="1" data-label="VIDEO TÌNH HUỐNG: 24 GIỜ ĐI ĐÂU MẤT?"></div><p style="text-align:center;margin-top:14px;font-weight:600">Không xem được? <a data-vl href="#" style="text-decoration:underline;color:inherit">Mở video trên Google Drive ↗</a></p></div></section>
+    <section id="xu" data-c="kim"><div class="w"><div class="game rv" id="game"></div></div></section>
     <section id="kh" data-c="kim"><div class="w"><div class="sh2 rv"><h2>I. KẾ
             HOẠCH GIẢNG DẠY/SINH HOẠT TOÀN KHÓA</h2></div><p class="lead rv">Dự
           án được triển khai dưới dạng 5 bài học, mỗi bài kéo dài từ 50 - 60
           phút, tập trung vào một nội dung cốt lõi. Các bài học được thiết kế
           theo hướng dễ hiểu – dễ thực hành – có thể áp dụng trực tiếp vào kế
-          hoạch cá nhân.</p><div class="tl"><article class="tc rv" data-go="1"
-            style="--c:var(--kim);--d:0.0s" tabindex="0"><svg class="sp"
+          hoạch cá nhân.</p><div class="tl"><article id="s1" class="tc rv"
+            style="--c:var(--kim);--d:0.0s" ><svg class="sp"
               viewBox="0 0 100 100"><use href="#sp-kim" /></svg><div
               class="tr"><small>STT</small><b class="nm">1</b></div><div
               class="tr"><small>Ngày, giờ thực hiện</small><span>7h30,
@@ -216,8 +202,8 @@ html{-webkit-text-size-adjust:100%}body{overflow-x:clip}img,svg,video,iframe{max
                 session</small><span>1</span></div><h3>Nhận thức giá trị thời
               gian &amp; Phân bổ quỹ thời gian cá nhân</h3><div class="tf"><span
                 title="Hình thức">Offline</span><span title="Thời lượng">60
-                phút</span></div></article><article class="tc rv" data-go="2"
-            style="--c:var(--hoa);--d:0.08s" tabindex="0"><svg class="sp"
+                phút</span></div><details class="brief"><summary>Bạn sẽ học gì?</summary><ul><li>Time-Blocking: chia 24 giờ thành các khối</li><li>Buffer Block: túi khí cho biến cố</li><li>3 câu hỏi chọn ưu tiên: hạn chót, mất bao lâu, có ưu tiên không</li></ul></details></article><article id="s2" class="tc rv"
+            style="--c:var(--hoa);--d:0.08s" ><svg class="sp"
               viewBox="0 0 100 100"><use href="#sp-hoa" /></svg><div
               class="tr"><small>STT</small><b class="nm">2</b></div><div
               class="tr"><small>Ngày, giờ thực hiện</small><span>10h00,
@@ -225,17 +211,16 @@ html{-webkit-text-size-adjust:100%}body{overflow-x:clip}img,svg,video,iframe{max
                 session</small><span>1</span></div><h3>Nhận diện nguyên nhân trì
               hoãn &amp; Kỹ thuật loại bỏ tác nhân gây xao nhãng</h3><div
               class="tf"><span title="Hình thức">Offline</span><span
-                title="Thời lượng">55 phút</span></div></article><article
-            class="tc rv" data-go="3" style="--c:var(--thuy);--d:0.16s"
-            tabindex="0"><svg class="sp" viewBox="0 0 100 100"><use
+                title="Thời lượng">55 phút</span></div><details class="brief"><summary>Bạn sẽ học gì?</summary><ul><li>Truy tìm 6 "nghi phạm" ăn trộm thời gian</li><li>Ma trận Eisenhower 4 góc</li><li>Kỹ thuật 3 Whys tìm nguyên nhân gốc</li></ul></details></article><article id="s3" class="tc rv" style="--c:var(--thuy);--d:0.16s"
+            ><svg class="sp" viewBox="0 0 100 100"><use
                 href="#sp-thuy" /></svg><div class="tr"><small>STT</small><b
                 class="nm">3</b></div><div class="tr"><small>Ngày, giờ thực
                 hiện</small><span>7h30, 27/10/2026</span></div><div
               class="tr"><small>Số session</small><span>1</span></div><h3>Công
               cụ hỗ trợ quản lý thời gian hiệu quả</h3><div class="tf"><span
                 title="Hình thức">Offline</span><span title="Thời lượng">65
-                phút</span></div></article><article class="tc rv" data-go="4"
-            style="--c:var(--tho);--d:0.24s" tabindex="0"><svg class="sp"
+                phút</span></div><details class="brief"><summary>Bạn sẽ học gì?</summary><ul><li>Google Calendar × mã màu Eisenhower</li><li>Chia nhỏ dự án bằng app checklist</li><li>Dọn không gian số &amp; phản hồi 1–1–1</li></ul></details></article><article id="s4" class="tc rv"
+            style="--c:var(--tho);--d:0.24s" ><svg class="sp"
               viewBox="0 0 100 100"><use href="#sp-tho" /></svg><div
               class="tr"><small>STT</small><b class="nm">4</b></div><div
               class="tr"><small>Ngày, giờ thực hiện</small><span>10h00,
@@ -243,8 +228,8 @@ html{-webkit-text-size-adjust:100%}body{overflow-x:clip}img,svg,video,iframe{max
                 session</small><span>1</span></div><h3>Thí nghiệm Pomodoro :
               Công thức tạo ra sự tập trung</h3><div class="tf"><span
                 title="Hình thức">Offline</span><span title="Thời lượng">65
-                phút</span></div></article><article class="tc rv" data-go="5"
-            style="--c:var(--moc);--d:0.32s" tabindex="0"><svg class="sp"
+                phút</span></div><details class="brief"><summary>Bạn sẽ học gì?</summary><ul><li>Học 25 phút – nghỉ 5 phút</li><li>Cách ly tác nhân gây nhiễu: ghi lại → gạt sang → tiếp tục</li><li>Lập công thức Pomodoro cá nhân</li></ul></details></article><article id="s5" class="tc rv"
+            style="--c:var(--moc);--d:0.32s" ><svg class="sp"
               viewBox="0 0 100 100"><use href="#sp-moc" /></svg><div
               class="tr"><small>STT</small><b class="nm">5</b></div><div
               class="tr"><small>Ngày, giờ thực hiện</small><span>19h30,
@@ -252,60 +237,7 @@ html{-webkit-text-size-adjust:100%}body{overflow-x:clip}img,svg,video,iframe{max
                 session</small><span>1</span></div><h3>Thực hành phương pháp
               Pomodoro</h3><div class="tf"><span
                 title="Hình thức">Online</span><span title="Thời lượng">150
-                phút</span></div></article></div></div></section>
-    <section class="dh"><div class="w"><div class="sh2 rv"><h2>II. NỘI DUNG CHI
-            TIẾT TỪNG BUỔI HỌC/SINH HOẠT</h2></div></div></section>
-    <section class="ss" id="s1" data-c="kim" style="--c:var(--kim)"><div
-        class="w">
-        <div class="sh rv"><span class="no">1</span><div><div class="pre">1.
-              Buổi sinh hoạt 1:</div><h2>Nhận thức giá trị thời gian &amp; Phân
-              bổ quỹ thời gian cá nhân.</h2></div><svg class="sp big"
-            viewBox="0 0 100 100"><use href="#sp-kim" /></svg></div>
-        <div class="meta rv"><span class="mc">7h30, 20/10/2026</span><span
-            class="mc">Offline</span><span class="mc">60 phút</span></div><details class="brief rv"><summary>Bạn sẽ học gì?</summary><ul><li>Time-Blocking: chia 24 giờ thành các khối</li><li>Buffer Block: túi khí cho biến cố</li><li>3 câu hỏi chọn ưu tiên: hạn chót, mất bao lâu, có ưu tiên không</li></ul></details>
-        <div class="game" id="game"></div>
-        
-      </div></section><section class="ss" id="s2" data-c="hoa"
-      style="--c:var(--hoa)"><div class="w">
-        <div class="sh rv"><span class="no">2</span><div><div class="pre">2.
-              Buổi sinh hoạt 2:</div><h2>Nhận diện nguyên nhân trì hoãn &amp; Kỹ
-              thuật loại bỏ tác nhân gây xao nhãng</h2></div><svg class="sp big"
-            viewBox="0 0 100 100"><use href="#sp-hoa" /></svg></div>
-        <div class="meta rv"><span class="mc">10h00, 23/10/2026</span><span
-            class="mc">Offline</span><span class="mc">55 phút</span></div><details class="brief rv"><summary>Bạn sẽ học gì?</summary><ul><li>Truy tìm 6 "nghi phạm" ăn trộm thời gian</li><li>Ma trận Eisenhower 4 góc</li><li>Kỹ thuật 3 Whys tìm nguyên nhân gốc</li></ul></details>
-
-        
-      </div></section><section class="ss" id="s3" data-c="thuy"
-      style="--c:var(--thuy)"><div class="w">
-        <div class="sh rv"><span class="no">3</span><div><div class="pre">3.
-              Buổi sinh hoạt 3:</div><h2>Công cụ hỗ trợ quản lý thời gian hiệu
-              quả</h2></div><svg class="sp big" viewBox="0 0 100 100"><use
-              href="#sp-thuy" /></svg></div>
-        <div class="meta rv"><span class="mc">7h30, 27/10/2026</span><span
-            class="mc">Offline</span><span class="mc">65 phút</span></div><details class="brief rv"><summary>Bạn sẽ học gì?</summary><ul><li>Google Calendar × mã màu Eisenhower</li><li>Chia nhỏ dự án bằng app checklist</li><li>Dọn không gian số &amp; phản hồi 1–1–1</li></ul></details>
-
-        
-      </div></section><section class="ss" id="s4" data-c="tho"
-      style="--c:var(--tho)"><div class="w">
-        <div class="sh rv"><span class="no">4</span><div><div class="pre">4.
-              Buổi sinh hoạt 4:</div><h2>Thí nghiệm Pomodoro : Công thức tạo ra
-              sự tập trung</h2></div><svg class="sp big"
-            viewBox="0 0 100 100"><use href="#sp-tho" /></svg></div>
-        <div class="meta rv"><span class="mc">10h00, 30/10/2026</span><span
-            class="mc">Offline</span><span class="mc">65 phút</span></div><details class="brief rv"><summary>Bạn sẽ học gì?</summary><ul><li>Học 25 phút – nghỉ 5 phút</li><li>Cách ly tác nhân gây nhiễu: ghi lại → gạt sang → tiếp tục</li><li>Lập công thức Pomodoro cá nhân</li></ul></details>
-        <div class="pomo" data-sp="tho"></div>
-        
-      </div></section><section class="ss" id="s5" data-c="moc"
-      style="--c:var(--moc)"><div class="w">
-        <div class="sh rv"><span class="no">5</span><div><div class="pre">5.
-              Buổi sinh hoạt 5:</div><h2>Thực hành phương pháp
-              Pomodoro</h2></div><svg class="sp big" viewBox="0 0 100 100"><use
-              href="#sp-moc" /></svg></div>
-        <div class="meta rv"><span class="mc">19h30, 1/11/2026</span><span
-            class="mc">Online</span><span class="mc">150 phút</span></div><details class="brief rv"><summary>Bạn sẽ học gì?</summary><ul><li>2 phiên Pomodoro thực hành</li><li>Tự đánh giá &amp; so sánh hai phiên</li><li>Thử thách 3 ngày × 2 phiên mỗi ngày</li></ul></details>
-        <div class="pomo" data-sp="moc"></div>
-        
-      </div></section>
+                phút</span></div><details class="brief"><summary>Bạn sẽ học gì?</summary><ul><li>2 phiên Pomodoro thực hành</li><li>Tự đánh giá &amp; so sánh hai phiên</li><li>Thử thách 3 ngày × 2 phiên mỗi ngày</li></ul></details></article></div></div></section>
     <section id="dangky"><div class="w"><div class="cta rv"><div class="tag">Đăng ký tham gia</div><h2>Sẵn sàng tiêu 24 xu thật thông minh?</h2><p class="lead">Bấm nút bên dưới để đăng ký.</p><a class="btn" data-reg href="#dangky">Mở form đăng ký ↗</a></div></div></section>
     <footer><div class="w"><svg class="sp" viewBox="0 0 100 100"><use
             href="#sp-kim" /></svg><svg class="sp" viewBox="0 0 100 100"><use
@@ -329,7 +261,7 @@ const emb=u=>u.replace(/\/view.*$/,"/preview").replace(/watch\?v=/,"embed/").rep
 /* sticker burst (nối các thành phần với nhau) */
 function burst(x,y){for(let i=0;i<14;i++){const e=document.createElement("i");e.className="cf";const a=Math.random()*6.28,r=60+Math.random()*90;e.style.cssText=`left:${x}px;top:${y}px;--x:${Math.cos(a)*r}px;--y:${Math.sin(a)*r-60}px;background:${V(ALL[i%5])}`;document.body.appendChild(e);setTimeout(()=>e.remove(),950)}}
 const mid=el=>{const r=el.getBoundingClientRect();return[r.left+r.width/2,r.top+r.height/2]};
-function pulse(n){const b=$(`#rail [data-go="${n}"]`);b.classList.remove("pu");void b.offsetWidth;b.classList.add("pu");const s=$(`#s${n} .big`);s.classList.remove("pop");void s.getBoundingClientRect();s.classList.add("pop")}
+function pulse(n){}
 function go(n){const s=$("#s"+n);s.scrollIntoView();s.classList.remove("fl");void s.offsetWidth;s.classList.add("fl");setTimeout(()=>pulse(n),500)}
 document.addEventListener("click",e=>{
   const g=e.target.closest("[data-go]");if(g){burst(...mid(g));go(+g.dataset.go);return}
@@ -350,7 +282,7 @@ const secs=$$("[data-c]");let cur="kim";
 function spy(){const y=innerHeight*.4;let c="kim",k=0;secs.forEach(s=>{const r=s.getBoundingClientRect();if(r.top<y&&r.bottom>y){c=s.dataset.c;if(s.id[0]=="s"&&s.id.length==2)k=+s.id[1]}});
  if(c!==cur){cur=c;document.body.style.setProperty("--acc",V(c))}
  $$("#rail button").forEach(b=>b.classList.toggle("on",+b.dataset.go===k));
- const h=document.documentElement,p=scrollY/(h.scrollHeight-innerHeight||1);$("#pg").style.width=p*100+"%";const rl=$("#rail");$("#rf").style.height=Math.max(0,(rl.offsetHeight-16)*p)+"px"}
+ const h=document.documentElement,p=scrollY/(h.scrollHeight-innerHeight||1);$("#pg").style.width=p*100+"%";}
 addEventListener("scroll",spy,{passive:true});spy();
 /* tab 1.1 / 1.2 / 1.3 */
 $$(".ss").forEach(s=>{const T=$$(`#${s.id} .tab`),Pn=$$(`#${s.id} .panel`);T.forEach(t=>t.onclick=()=>{T.forEach(x=>x.classList.toggle("on",x==t));Pn.forEach((p,i)=>p.classList.toggle("on",i==+t.dataset.t));burst(...mid(t))})});
