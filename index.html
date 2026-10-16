@@ -98,6 +98,15 @@ footer{border-top:4px solid var(--ln);background:var(--ln);color:#fff;padding:34
 html{-webkit-text-size-adjust:100%}body{overflow-x:clip}img,svg,video,iframe{max-width:100%}h1,h2,h3,h4,p,li,summary{overflow-wrap:break-word}
 @media(max-width:520px){nav .w{height:auto;min-height:60px;flex-wrap:wrap;justify-content:center;padding-top:6px;padding-bottom:6px;row-gap:4px}nav .ln{flex-wrap:wrap;justify-content:center;gap:6px}.pl{width:34px;height:34px;font-size:14px}.pl.rg{height:34px;padding:0 12px;font-size:13px}}
 @media(max-width:480px){.coins{grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}.game,.pomo{padding:16px}}
+/* video: nằm giữa khung, bấm mới tải */
+.slot.has-video{min-height:0;padding:0;display:block;position:relative;aspect-ratio:16/9;border-style:solid}
+.slot.has-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:0;object-fit:fill}
+.vf{position:absolute;inset:0;width:100%;height:100%;margin:0;padding:0;border:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:linear-gradient(135deg,#1b1f2a,#0d0f14);color:#fff;font:600 15px/1.2 inherit;font-family:inherit}
+.vf span{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;font-size:34px;padding-left:6px;background:var(--kim,#ffc800);color:#111;border:3px solid #fff;box-shadow:0 6px 24px #0008;transition:transform .15s}
+.vf:hover span,.vf:focus-visible span{transform:scale(1.1)}.vf:focus-visible{outline:3px solid var(--kim,#ffc800);outline-offset:-6px}
+@media(max-width:480px){.vf span{width:64px;height:64px;font-size:26px}}
+.slot.has-video,.slot.has-video.rv{opacity:1!important;transform:none!important;transition:none!important;animation:none!important}
+@supports not (aspect-ratio:1/1){.slot.has-video{height:0;padding-top:56.25%}}
 </style></head><body><svg width="0" height="0" style="position:absolute"
       aria-hidden="true"><defs><g id="fc"><circle class="ey" cx="39" cy="58"
             r="4.5" /><circle class="ey" cx="61" cy="58" r="4.5" /><circle
@@ -188,7 +197,7 @@ html{-webkit-text-size-adjust:100%}body{overflow-x:clip}img,svg,video,iframe{max
           ★ Google Calendar ★ Digital Minimalism ★ </span><span>TIME SMART ★
           Time-Blocking ★ Buffer Block ★ Ma trận Eisenhower ★ 3 Whys ★ Pomodoro
           ★ Google Calendar ★ Digital Minimalism ★ </span></div></div>
-    <section id="intro" data-c="kim"><div class="w"><div class="sh2 rv"><h2>VIDEO TÌNH HUỐNG: 24 GIỜ ĐI ĐÂU MẤT?</h2></div><div class="slot intro rv" data-intro="1" data-label="VIDEO TÌNH HUỐNG: 24 GIỜ ĐI ĐÂU MẤT?"></div><p class="rv" style="text-align:center;margin-top:14px;font-weight:600">Không xem được? <a data-vl href="#" style="text-decoration:underline;color:inherit">Mở video trên Google Drive ↗</a></p></div></section>
+    <section id="intro" data-c="kim"><div class="w"><div class="sh2 rv"><h2>VIDEO TÌNH HUỐNG: 24 GIỜ ĐI ĐÂU MẤT?</h2></div><div class="slot intro" data-intro="1" data-label="VIDEO TÌNH HUỐNG: 24 GIỜ ĐI ĐÂU MẤT?"></div><p style="text-align:center;margin-top:14px;font-weight:600">Không xem được? <a data-vl href="#" style="text-decoration:underline;color:inherit">Mở video trên Google Drive ↗</a></p></div></section>
     <section id="kh" data-c="kim"><div class="w"><div class="sh2 rv"><h2>I. KẾ
             HOẠCH GIẢNG DẠY/SINH HOẠT TOÀN KHÓA</h2></div><p class="lead rv">Dự
           án được triển khai dưới dạng 5 bài học, mỗi bài kéo dài từ 50 - 60
@@ -487,7 +496,7 @@ $$(".sg").forEach(b=>b.onclick=()=>{const [n,i]=b.dataset.g.split("-");const sec
 /* mỗi bước sáng lên khi tới */
 const so=new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle("in",e.isIntersecting&&e.boundingClientRect.top<innerHeight*.75)),{threshold:.2});$$("details.st").forEach(d=>so.observe(d));
 /* ô trống video / ảnh */
-$$(".slot").forEach(el=>{const u=el.dataset.intro?CONFIG.introVideo:CONFIG.media[el.dataset.m];el.innerHTML=u?(/\/folders\//.test(u)?`<a class="btn" href="${u}" target="_blank" rel="noopener">▶ Xem video giới thiệu ↗</a>`:/\.(png|jpe?g|webp|gif|svg)(\?|$)/i.test(u)?`<img src="${u}" alt="" loading="lazy">`:`<iframe src="${emb(u)}" allowfullscreen loading="lazy"></iframe>`):`<div><b>＋</b>${el.dataset.label}</div>`});
+$$(".slot").forEach(el=>{const u=el.dataset.intro?CONFIG.introVideo:CONFIG.media[el.dataset.m];if(u&&!/\/folders\//.test(u)&&!/\.(png|jpe?g|webp|gif|svg)(\?|$)/i.test(u))el.classList.add("has-video");el.innerHTML=u?(/\/folders\//.test(u)?`<a class="btn" href="${u}" target="_blank" rel="noopener">▶ Xem video giới thiệu ↗</a>`:/\.(png|jpe?g|webp|gif|svg)(\?|$)/i.test(u)?`<img src="${u}" alt="" loading="lazy">`:`<button class="vf" type="button" data-src="${emb(u)}" aria-label="Phát video"><span>▶</span>Bấm để xem video</button>`):`<div><b>＋</b>${el.dataset.label}</div>`});
 if(CONFIG.registerUrl){const r=$("#reg");r.href=CONFIG.registerUrl;r.target="_blank";r.rel="noopener";r.hidden=false;$$("[data-reg]").forEach(a=>{a.href=CONFIG.registerUrl;a.target="_blank";a.rel="noopener"})}
 /* trò chơi 24 đồng xu */
 (function(){const g=$("#game");if(!g)return;let a=Array(24).fill(-1),sel=0,done=false;const col=["kim","thuy","tho","moc","hoa","buf"];
@@ -509,4 +518,5 @@ $$(".pomo").forEach(p=>{const sp=p.dataset.sp,C=2*Math.PI*82;let m=0,left=25*60,
   else if(x.dataset.a=="r")reset();
   else if(t)stop();else{p.classList.add("run");pb.textContent="⏸";t=setInterval(()=>{left--;show();if(left<=0){stop();burst(...mid(p.querySelector(".ring")));pulse(+p.closest(".ss").id[1]);left=tot;show()}},1000)}};show()});
 document.querySelectorAll("[data-vl]").forEach(a=>{if(CONFIG.introVideo){a.href=CONFIG.introVideo;a.target="_blank";a.rel="noopener"}else{a.parentElement.hidden=true}});
+document.addEventListener("click",e=>{const b=e.target.closest(".vf");if(!b)return;b.parentElement.innerHTML=`<iframe src="${b.dataset.src}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`});
 </script></body></html>
