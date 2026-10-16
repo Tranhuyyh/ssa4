@@ -107,6 +107,10 @@ html{-webkit-text-size-adjust:100%}body{overflow-x:clip}img,svg,video,iframe{max
 @media(max-width:480px){.vf span{width:64px;height:64px;font-size:26px}}
 .slot.has-video,.slot.has-video.rv{opacity:1!important;transform:none!important;transition:none!important;animation:none!important}
 @supports not (aspect-ratio:1/1){.slot.has-video{height:0;padding-top:56.25%}}
+.brief{background:#fff;border:3px solid var(--ln);border-radius:18px;box-shadow:5px 5px 0 var(--c);padding:6px 18px;margin:0 0 26px;transition:.2s}.brief:hover{transform:translateY(-3px)}
+.brief summary{cursor:pointer;font:800 18px 'Bricolage Grotesque',sans-serif;padding:8px 0;list-style:none;display:flex;justify-content:space-between;align-items:center}.brief summary::-webkit-details-marker{display:none}
+.brief summary::after{content:"+";width:32px;height:32px;border-radius:50%;border:3px solid var(--ln);background:var(--c);display:grid;place-items:center;transition:.3s}.brief[open] summary::after{content:"–";transform:rotate(180deg)}
+.brief ul{margin:4px 0 12px 20px;animation:pin .4s}.brief li{margin:6px 0}
 </style></head><body><svg width="0" height="0" style="position:absolute"
       aria-hidden="true"><defs><g id="fc"><circle class="ey" cx="39" cy="58"
             r="4.5" /><circle class="ey" cx="61" cy="58" r="4.5" /><circle
@@ -258,36 +262,9 @@ html{-webkit-text-size-adjust:100%}body{overflow-x:clip}img,svg,video,iframe{max
               bổ quỹ thời gian cá nhân.</h2></div><svg class="sp big"
             viewBox="0 0 100 100"><use href="#sp-kim" /></svg></div>
         <div class="meta rv"><span class="mc">7h30, 20/10/2026</span><span
-            class="mc">Offline</span><span class="mc">60 phút</span></div>
+            class="mc">Offline</span><span class="mc">60 phút</span></div><details class="brief rv"><summary>Bạn sẽ học gì?</summary><ul><li>Time-Blocking: chia 24 giờ thành các khối</li><li>Buffer Block: túi khí cho biến cố</li><li>3 câu hỏi chọn ưu tiên: hạn chót, mất bao lâu, có ưu tiên không</li></ul></details>
         <div class="game" id="game"></div>
-        <div class="panel on" data-p="0"><h3><i><b>1.1. </b></i><i><b>Mục tiêu
-                buổi sinh hoạt</b></i></h3><p class="b0 rv">Sau khi tham gia
-            buổi sinh hoạt này, người học có thể:</p><div class="og"><div
-              class="oc rv" style="--c:var(--thuy)"><h4>Về kiến thức:</h4><p
-                class="b2">+ Nắm vững kỹ thuật Time-Blocking (Phân chia khối
-                thời gian): Chia 24 giờ thành các khối thời gian cố định dành
-                riêng cho một nhóm hoạt động hoặc nhiệm vụ cụ thể.</p><p
-                class="b2">+ Hiểu được nguyên tắc lồng ghép đời sống (ăn uống,
-                vận động, thư giãn, dự phòng) vào kế hoạch thời gian cá nhân và
-                nhóm.</p><p class="b2">+ Nhận thức được chu trình tự điều chỉnh
-                trong quản lý thời gian: “Lập kế hoạch – Theo dõi – Đánh
-                giá”</p></div><div class="oc rv" style="--c:var(--moc)"><h4>Về
-                kỹ năng:</h4><p class="b2">+ Vận dụng kỹ thuật Time-Blocking
-                bằng phương pháp phân bổ “24 đồng xu” để sắp xếp các khối thời
-                gian cho học tập, nghỉ ngơi, giải trí, sinh hoạt cá nhân và khối
-                dự phòng (Buffer Block).</p><p class="b2">+ Phân tích và đánh
-                giá cách bản thân/nhóm đang sử dụng thời gian thực tế để nhận
-                diện ít nhất một “khoản chi thời gian” cần cải thiện.</p><p
-                class="b2">+Áp dụng khối thời gian dự phòng (Buffer Block) trong
-                Time-Blocking để linh hoạt xử lý các sự kiện bất ngờ phát sinh
-                trong ngày.</p><p class="b2">+ Lựa chọn ưu tiên công việc dựa
-                trên 3 câu hỏi đánh giá khi quỹ thời gian trong ngày sắp
-                hết</p></div><div class="oc rv" style="--c:var(--hoa)"><h4>Về
-                thái độ:</h4><p class="b2">+ Nhận thức được thời gian là tài
-                nguyên hữu hạn và vô giá.</p><p class="b2">+ Chủ động, linh hoạt
-                đối mặt với biến cố/sự kiện ngoài dự kiến thay vì áp lực</p><p
-                class="b2">+ Thư giãn và giải trí có kế hoạch để giảm bớt cảm
-                giác tội lỗi khi nghỉ ngơi</p></div></div></div>
+        
       </div></section><section class="ss" id="s2" data-c="hoa"
       style="--c:var(--hoa)"><div class="w">
         <div class="sh rv"><span class="no">2</span><div><div class="pre">2.
@@ -295,36 +272,9 @@ html{-webkit-text-size-adjust:100%}body{overflow-x:clip}img,svg,video,iframe{max
               thuật loại bỏ tác nhân gây xao nhãng</h2></div><svg class="sp big"
             viewBox="0 0 100 100"><use href="#sp-hoa" /></svg></div>
         <div class="meta rv"><span class="mc">10h00, 23/10/2026</span><span
-            class="mc">Offline</span><span class="mc">55 phút</span></div>
+            class="mc">Offline</span><span class="mc">55 phút</span></div><details class="brief rv"><summary>Bạn sẽ học gì?</summary><ul><li>Truy tìm 6 "nghi phạm" ăn trộm thời gian</li><li>Ma trận Eisenhower 4 góc</li><li>Kỹ thuật 3 Whys tìm nguyên nhân gốc</li></ul></details>
 
-        <div class="panel on" data-p="0"><h3><i><b>2.1. Mục tiêu buổi sinh hoạt
-              </b></i></h3><p class="b0 rv">Sau khi tham gia buổi sinh hoạt này,
-            người học có thể:</p><div class="og"><div class="oc rv"
-              style="--c:var(--thuy)"><h4>Về kiến thức:</h4><p class="b2">+ Nhận
-                diện các nguyên nhân cốt lõi khiến thời gian bị thất thoát
-                ("nghi phạm" gây mất thời gian: mạng xã hội, trì hoãn tâm lý,
-                bận rộn giả tạo, mục tiêu mơ hồ...).</p><p class="b2">+ Nắm vững
-                cấu trúc và nguyên lý phân loại của Ma trận Eisenhower để phân
-                định đúng thứ tự ưu tiên.</p><p class="b2">+ Phân biệt rõ ràng
-                giữa hoạt động giải trí hợp lý với việc sử dụng thời gian thiếu
-                kiểm soát.</p><p class="b2">+ Hiểu bản chất tâm lý của hành vi
-                trì hoãn: không chỉ là quản lý thời gian kém mà do mục tiêu mơ
-                hồ, sợ sai, sợ quá tải.</p></div><div class="oc rv"
-              style="--c:var(--moc)"><h4>Về kỹ năng:</h4><p class="b2">+ Vận
-                dụng Ma trận Eisenhower để phân loại các công việc, hoạt động
-                lãng phí thời gian và các nhiệm vụ học tập thực tế.</p><p
-                class="b2">+ Áp dụng kỹ thuật "Thẩm vấn khẩn cấp" (3 Whys) để
-                bóc tách nguyên nhân gốc rễ phía sau hành vi trì hoãn của bản
-                thân.</p><p class="b2">+ Chuyển đổi các mục tiêu mơ hồ thành các
-                bước hành động nhỏ, cụ thể và thiết lập quy tắc cá nhân dạng
-                "Nếu... thì..." (If... Then...) gắn với phần
-                thưởng.</p></div><div class="oc rv"
-              style="--c:var(--hoa)"><h4>Về thái độ:</h4><p class="b2">+ Ý thức
-                sâu sắc về việc theo dõi hiệu quả thực tế thay vì tự đánh lừa
-                bằng sự "bận rộn giả tạo" (ngồi bàn 5 giờ khác với học 5
-                giờ).</p><p class="b2">+ Chủ động sắp xếp lại lịch trình hàng
-                ngày, đưa các hoạt động quan trọng nhưng không gấp (Góc 2) vào
-                khung giờ vàng.</p></div></div></div>
+        
       </div></section><section class="ss" id="s3" data-c="thuy"
       style="--c:var(--thuy)"><div class="w">
         <div class="sh rv"><span class="no">3</span><div><div class="pre">3.
@@ -332,42 +282,9 @@ html{-webkit-text-size-adjust:100%}body{overflow-x:clip}img,svg,video,iframe{max
               quả</h2></div><svg class="sp big" viewBox="0 0 100 100"><use
               href="#sp-thuy" /></svg></div>
         <div class="meta rv"><span class="mc">7h30, 27/10/2026</span><span
-            class="mc">Offline</span><span class="mc">65 phút</span></div>
+            class="mc">Offline</span><span class="mc">65 phút</span></div><details class="brief rv"><summary>Bạn sẽ học gì?</summary><ul><li>Google Calendar × mã màu Eisenhower</li><li>Chia nhỏ dự án bằng app checklist</li><li>Dọn không gian số &amp; phản hồi 1–1–1</li></ul></details>
 
-        <div class="panel on" data-p="0"><h3><i><b>3.1. Mục tiêu buổi sinh
-                hoạt</b></i></h3><p class="b0 rv">Sau khi tham gia buổi sinh
-            hoạt này, người học có thể:</p><div class="og"><div class="oc rv"
-              style="--c:var(--thuy)"><h4>Về kiến thức:</h4><p class="b2">+ Hiểu
-                được mối liên hệ từ toàn cảnh đến chi tiết trong hệ thống quản
-                lý thời gian: Lịch học kỳ (bức tranh lớn: hạn chót, kỳ thi) Lịch
-                tuần (kiểm tra tính khả thi) Danh sách việc hằng ngày (chốt ưu
-                tiên).</p><p class="b2">+ Nắm vững cách ứng dụng các công cụ
-                công nghệ (Google Calendar và các ứng dụng Task Management như
-                Notion, TickTick, Microsoft To-Do) để tự động hóa việc lập lịch
-                và nhắc nhở.</p><p class="b2">+ Nắm được nguyên tắc chia nhỏ dự
-                án lớn thành các đầu việc nhỏ (Sub-tasks) và nguyên tắc Tối ưu
-                hóa không gian số (Digital Minimalism) để chuẩn bị cho việc tập
-                trung sâu.</p><p class="b2">+ Hiểu công thức phản hồi hiệu quả
-                (1 Điểm tốt + 1 Vấn đề + 1 Gợi ý) khi đánh giá kế hoạch học
-                tập.</p></div><div class="oc rv" style="--c:var(--moc)"><h4>Về
-                kỹ năng:</h4><p class="b2">+ Thực hành trên Google Calendar:
-                Thiết lập được một lịch trình tuần hoàn chỉnh kết hợp
-                Time-Blocking (từ Buổi 1) và Mã màu Ma trận Eisenhower (từ Buổi
-                2), biết cài đặt đồng bộ lịch thi/hạn chót và thông báo đẩy
-                (Notifications).</p><p class="b2">+ Thực hành trên App Quản lý
-                tác vụ: Biết sử dụng Checklist App để bóc tách một bài tập
-                lớn/đồ án thành các bước hành động cụ thể và đưa vào lịch
-                tuần.</p><p class="b2">+ Tối ưu hóa thiết bị cá nhân: Thực hiện
-                dọn dẹp màn hình điện thoại và thiết lập chế độ tắt thông báo
-                gây nhiễu.</p><p class="b2">+ Vận dụng công thức phản hồi 3 phần
-                để nhận xét, chỉnh sửa cấu trúc lịch trên ứng dụng cùng giảng
-                viên/người điều phối và bạn học.</p></div><div class="oc rv"
-              style="--c:var(--hoa)"><h4>Về thái độ:</h4><p class="b2">+ Chủ
-                động chuyển đổi từ việc nhớ lịch trong đầu sang sử dụng hệ thống
-                công cụ số chuyên nghiệp.</p><p class="b2">+ Loại bỏ tâm lý xếp
-                lịch kín mít kiểu “người máy”, duy trì thói quen giữ khoảng
-                trống dự phòng và tinh chỉnh hệ thống sau mỗi 2
-                tuần.</p></div></div></div>
+        
       </div></section><section class="ss" id="s4" data-c="tho"
       style="--c:var(--tho)"><div class="w">
         <div class="sh rv"><span class="no">4</span><div><div class="pre">4.
@@ -375,36 +292,9 @@ html{-webkit-text-size-adjust:100%}body{overflow-x:clip}img,svg,video,iframe{max
               sự tập trung</h2></div><svg class="sp big"
             viewBox="0 0 100 100"><use href="#sp-tho" /></svg></div>
         <div class="meta rv"><span class="mc">10h00, 30/10/2026</span><span
-            class="mc">Offline</span><span class="mc">65 phút</span></div>
+            class="mc">Offline</span><span class="mc">65 phút</span></div><details class="brief rv"><summary>Bạn sẽ học gì?</summary><ul><li>Học 25 phút – nghỉ 5 phút</li><li>Cách ly tác nhân gây nhiễu: ghi lại → gạt sang → tiếp tục</li><li>Lập công thức Pomodoro cá nhân</li></ul></details>
         <div class="pomo" data-sp="tho"></div>
-        <div class="panel on" data-p="0"><h3><i><b>4.1. Mục tiêu buổi sinh
-                hoạt</b></i></h3><p class="b0 rv">Sau khi tham gia buổi sinh
-            hoạt này, người học có thể:</p><div class="og"><div class="oc rv"
-              style="--c:var(--thuy)"><h4>Về kiến thức:</h4><p class="b2">+ Nắm
-                vững nguyên tắc cốt lõi của phương pháp Pomodoro (25 phút làm
-                việc – 5 phút nghỉ) do Francesco Cirillo đề xuất.</p><p
-                class="b2">+ Hiểu được lý do tại sao kế hoạch mơ hồ gây quá tải
-                và nguyên lý "chia nhỏ nhiệm vụ" (vừa vặn trong 1 chặng làm
-                việc, cụ thể, đo lường được).</p><p class="b2">+ Nắm rõ khái
-                niệm "Khối thời gian ngắn" (Short blocks) và chu trình thực
-                nghiệm: Lập kế hoạch – Theo dõi – Đánh giá (Plan – Monitor –
-                Evaluate).</p><p class="b2">+ Hiểu cơ chế và kỹ thuật 3 bước
-                "Cách ly" tác nhân gây nhiễu (Ghi chép lại Gạt sang bên Tiếp
-                tục).</p></div><div class="oc rv" style="--c:var(--moc)"><h4>Về
-                kỹ năng:</h4><p class="b2">+ Áp dụng được phương pháp Pomodoro
-                vào việc tự học và hoàn thành bài tập.</p><p class="b2">+ Áp
-                dụng kỹ thuật "Cách ly" để xử lý triệt để các suy nghĩ chen
-                ngang hoặc thông báo điện thoại mà không làm vỡ phiên làm
-                việc.</p><p class="b2">+ Phân tích, đánh giá hiệu suất sau phiên
-                làm việc và tự thiết kế "Công thức Pomodoro cá nhân" phù hợp với
-                nhịp sinh học của bản thân.</p></div><div class="oc rv"
-              style="--c:var(--hoa)"><h4>Về thái độ:</h4><p class="b2">+ Có ý
-                thức hạn chế những yếu tố gây xao nhãng trong quá trình học
-                tập.</p><p class="b2">+ Chủ động bắt đầu công việc thay vì chờ
-                đến khi có hứng mới học.</p><p class="b2">+ Hiểu rằng tập trung
-                hiệu quả không có nghĩa là phải học liên tục trong nhiều giờ mà
-                cần kết hợp giữa học tập và nghỉ ngơi hợp
-                lý.</p></div></div></div>
+        
       </div></section><section class="ss" id="s5" data-c="moc"
       style="--c:var(--moc)"><div class="w">
         <div class="sh rv"><span class="no">5</span><div><div class="pre">5.
@@ -412,34 +302,9 @@ html{-webkit-text-size-adjust:100%}body{overflow-x:clip}img,svg,video,iframe{max
               Pomodoro</h2></div><svg class="sp big" viewBox="0 0 100 100"><use
               href="#sp-moc" /></svg></div>
         <div class="meta rv"><span class="mc">19h30, 1/11/2026</span><span
-            class="mc">Online</span><span class="mc">150 phút</span></div>
+            class="mc">Online</span><span class="mc">150 phút</span></div><details class="brief rv"><summary>Bạn sẽ học gì?</summary><ul><li>2 phiên Pomodoro thực hành</li><li>Tự đánh giá &amp; so sánh hai phiên</li><li>Thử thách 3 ngày × 2 phiên mỗi ngày</li></ul></details>
         <div class="pomo" data-sp="moc"></div>
-        <div class="panel on" data-p="0"><h3><i><b>5.1. Mục tiêu buổi sinh
-                hoạt</b></i></h3><p class="b0 rv">Sau khi tham gia buổi sinh
-            hoạt này, người học có thể:</p><div class="og"><div class="oc rv"
-              style="--c:var(--thuy)"><h4>Về kiến thức:</h4><p class="b2">+ Hiểu
-                phương pháp Pomodoro, nguyên tắc hoạt động và lợi ích của phương
-                pháp trong việc quản lý thời gian học tập.</p><p class="b2">+
-                Biết cách chia thời gian học tập thành các khoảng tập trung và
-                nghỉ ngơi hợp lý để duy trì sự tập trung.</p><p class="b2">+
-                Nhận biết được tác hại của việc trì hoãn và mất tập trung trong
-                quá trình học tập.</p><p class="b2">+ Biết cách áp dụng phương
-                pháp Pomodoro vào học tập và các công việc hằng
-                ngày.</p></div><div class="oc rv" style="--c:var(--moc)"><h4>Về
-                kỹ năng:</h4><p class="b2">+ Lập kế hoạch học tập theo phương
-                pháp Pomodoro phù hợp với mục tiêu cá nhân.</p><p class="b2">+
-                Biết sử dụng đồng hồ hoặc ứng dụng để theo dõi thời gian học tập
-                và nghỉ ngơi.</p><p class="b2">+ Tăng khả năng tập trung, giảm
-                sự xao nhãng và hoàn thành nhiệm vụ đúng thời hạn.</p><p
-                class="b2">+ Tự đánh giá kết quả học tập sau mỗi phiên Pomodoro
-                để điều chỉnh kế hoạch phù hợp.</p></div><div class="oc rv"
-              style="--c:var(--hoa)"><h4>Về thái độ:</h4><p class="b2">+ Có ý
-                thức chủ động quản lý và sử dụng thời gian hiệu quả.</p><p
-                class="b2">+ Hạn chế thói quen trì hoãn, hình thành tính kỷ luật
-                trong học tập.</p><p class="b2">+ Có tinh thần nghiêm túc, tích
-                cực tham gia các hoạt động thực hành.</p><p class="b2">+ Duy trì
-                thói quen học tập khoa học, cân bằng giữa học tập và nghỉ
-                ngơi.</p></div></div></div>
+        
       </div></section>
     <section id="dangky"><div class="w"><div class="cta rv"><div class="tag">Đăng ký tham gia</div><h2>Sẵn sàng tiêu 24 xu thật thông minh?</h2><p class="lead">Bấm nút bên dưới để đăng ký.</p><a class="btn" data-reg href="#dangky">Mở form đăng ký ↗</a></div></div></section>
     <footer><div class="w"><svg class="sp" viewBox="0 0 100 100"><use
