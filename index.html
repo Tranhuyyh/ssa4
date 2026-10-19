@@ -111,7 +111,60 @@ html{-webkit-text-size-adjust:100%}body{overflow-x:clip}img,svg,video,iframe{max
 .brief summary{cursor:pointer;font:800 18px 'Bricolage Grotesque',sans-serif;padding:8px 0;list-style:none;display:flex;justify-content:space-between;align-items:center}.brief summary::-webkit-details-marker{display:none}
 .brief summary::after{content:"+";width:32px;height:32px;border-radius:50%;border:3px solid var(--ln);background:var(--c);display:grid;place-items:center;transition:.3s}.brief[open] summary::after{content:"–";transform:rotate(180deg)}
 .brief ul{margin:4px 0 12px 20px;animation:pin .4s}.brief li{margin:6px 0}
-.tc{cursor:default}#s1{cursor:pointer}#xu[hidden]{display:none}#xu{scroll-margin-top:110px;padding-top:24px}#s1:focus:not(:focus-visible):not(:hover){transform:none;box-shadow:6px 6px 0 var(--ln)}#xu.show .game{animation:pin .5s cubic-bezier(.3,1.4,.5,1)}.tc .brief{margin:12px 0 0;padding:2px 12px;box-shadow:3px 3px 0 var(--ln);font-size:14px}.tc .brief summary{font-size:15px}.tc .brief summary::after{width:26px;height:26px;flex:none}.tc .brief:hover{transform:none}.tc{display:flex;flex-direction:column}.tc .tf{margin-bottom:14px}.tc .brief{margin-top:2px;padding:2px 10px;text-align:left}.tc .brief summary{font-size:15px;gap:8px}.tc .brief ul{margin:2px 0 10px;padding-left:1.1em;font-size:13.5px;line-height:1.45;text-align:left}.tc .brief li{margin:5px 0;padding-left:2px}@media(max-width:1100px){.tl{grid-template-columns:repeat(3,1fr);gap:64px 16px}.tl::before{display:none}}@media(max-width:780px){.tl{grid-template-columns:repeat(2,1fr)}}@media(max-width:540px){.tl{grid-template-columns:1fr}.tc .brief ul{font-size:14.5px}}.tl{align-items:start}</style></head><body><svg width="0" height="0" style="position:absolute"
+.tc{cursor:default}#s1{cursor:pointer}#xu[hidden]{display:none}#xu{scroll-margin-top:110px;padding-top:24px}#s1:focus:not(:focus-visible):not(:hover){transform:none;box-shadow:6px 6px 0 var(--ln)}#xu.show .game{animation:pin .5s cubic-bezier(.3,1.4,.5,1)}.tc .brief{margin:12px 0 0;padding:2px 12px;box-shadow:3px 3px 0 var(--ln);font-size:14px}.tc .brief summary{font-size:15px}.tc .brief summary::after{width:26px;height:26px;flex:none}.tc .brief:hover{transform:none}.tc{display:flex;flex-direction:column}.tc .tf{margin-bottom:14px}.tc .brief{margin-top:2px;padding:2px 10px;text-align:left}.tc .brief summary{font-size:15px;gap:8px}.tc .brief ul{margin:2px 0 10px;padding-left:1.1em;font-size:13.5px;line-height:1.45;text-align:left}.tc .brief li{margin:5px 0;padding-left:2px}@media(max-width:1100px){.tl{grid-template-columns:repeat(3,1fr);gap:64px 16px}.tl::before{display:none}}@media(max-width:780px){.tl{grid-template-columns:repeat(2,1fr)}}@media(max-width:540px){.tl{grid-template-columns:1fr}.tc .brief ul{font-size:14.5px}}.tl{align-items:start}/* ===== cấu trúc 4 trang ===== */
+nav .logo{font-size:22px;font-weight:800;color:var(--ln);text-decoration:none}
+.nl{padding:0 14px;height:34px;border-radius:99px;border:3px solid var(--ln);background:#fff;font:700 13px 'Be Vietnam Pro',sans-serif;display:inline-grid;place-items:center;text-decoration:none;color:var(--ln);white-space:nowrap;transition:.15s}
+.nl:hover{transform:translateY(-3px) rotate(-3deg);background:var(--c,var(--kim))}.nl.on{background:var(--c,var(--kim));box-shadow:3px 3px 0 var(--ln)}
+.page{display:none}.page.on{display:block;animation:pgin .55s cubic-bezier(.3,1.3,.5,1)}@keyframes pgin{from{opacity:0;transform:translateY(26px)}}
+.sub{font:800 clamp(20px,3.6vw,36px) 'Bricolage Grotesque',sans-serif;margin:4px 0 6px;max-width:640px}
+.rm{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:60px 0 26px;--p:0}
+.rm::before{content:"";position:absolute;left:10%;right:10%;top:38px;height:8px;border-radius:8px;background:repeating-linear-gradient(90deg,#16161640 0 14px,transparent 14px 26px)}
+.rm::after{content:"";position:absolute;left:10%;top:38px;height:8px;border-radius:8px;background:var(--ln);width:calc(80% * var(--p));transition:width .6s cubic-bezier(.3,1.3,.5,1)}
+.rn{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;background:none;border:0;cursor:pointer;font:inherit;color:var(--ln)}
+.rn .dot{width:78px;height:78px;border-radius:50%;border:4px solid var(--ln);background:#fff;display:grid;place-items:center;transition:.3s;box-shadow:4px 4px 0 var(--ln)}.rn .dot .sp{width:56px;height:56px;animation:none;filter:none}
+.rn:hover .dot{transform:translateY(-6px) rotate(-6deg)}.rn.on .dot{background:var(--c);transform:scale(1.18)}.rn.done .dot{background:color-mix(in srgb,var(--c) 55%,#fff)}
+.rn b{font:800 18px 'Bricolage Grotesque'}.rn small{font-size:12px;line-height:1.3;max-width:160px}
+.qp{display:none;position:relative;background:#fff;border:3px solid var(--ln);border-radius:24px;box-shadow:8px 8px 0 var(--c);padding:24px 22px 20px}.qp.on{display:block;animation:pin .5s cubic-bezier(.3,1.4,.5,1)}
+.qp .big{position:absolute;right:16px;top:-50px;width:100px;height:100px}.qp h3{font-size:clamp(20px,3vw,26px);margin:0 90px 10px 0}
+.qm{display:flex;gap:8px;flex-wrap:wrap}.qm span{background:var(--c);border:3px solid var(--ln);border-radius:99px;padding:0 14px;font-weight:600;font-size:14px}
+.qi{display:grid;gap:8px;margin:14px 0}.qi a,.qt a{display:block;background:#fff6d8;border:3px solid var(--ln);border-radius:14px;padding:8px 14px;color:var(--ln);text-decoration:none;font-weight:600;transition:.18s}.qi a:hover,.qt a:hover{transform:translateX(8px);background:var(--c)}
+.qt{display:flex;gap:8px;flex-wrap:wrap}.qt a{display:inline-block;border-radius:99px;background:var(--c)}.qgo{float:right;width:54px;height:54px;border-radius:50%;border:3px solid var(--ln);background:var(--c);display:grid;place-items:center;font-size:24px;text-decoration:none;color:var(--ln);box-shadow:4px 4px 0 var(--ln);transition:.15s}.qgo:hover{transform:translate(4px,4px);box-shadow:none}
+@media(max-width:640px){.rn .dot{width:54px;height:54px}.rn .dot .sp{width:38px;height:38px}.rm::before,.rm::after{top:28px}.rn small{display:none}}
+.pt{padding-bottom:0}.pt h2{font-size:clamp(28px,4.6vw,48px);font-weight:800}
+.lab{font:800 20px 'Bricolage Grotesque',sans-serif;margin:28px 0 12px}
+.acc{display:grid;gap:12px}.acc details{background:#fff;border:3px solid var(--ln);border-radius:18px;box-shadow:5px 5px 0 var(--ln);transition:.2s;overflow:hidden}.acc details[open]{box-shadow:7px 7px 0 var(--c)}
+.acc summary{cursor:pointer;list-style:none;padding:14px 62px 14px 18px;font-weight:600;position:relative}.acc summary::-webkit-details-marker{display:none}.acc summary span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.acc details[open] summary span{-webkit-line-clamp:unset}
+.acc summary::after{content:"+";position:absolute;right:14px;top:14px;width:32px;height:32px;border-radius:50%;border:3px solid var(--ln);background:var(--c);display:grid;place-items:center;font-weight:800;transition:.3s}.acc details[open] summary::after{content:"–";transform:rotate(180deg)}
+.acc details[open] summary{background:color-mix(in srgb,var(--c) 35%,#fff);border-bottom:3px solid var(--ln)}
+.ab{padding:6px 20px 16px;animation:pin .4s}.ab p{margin:.6em 0}.ab h5{font:800 17px 'Bricolage Grotesque',sans-serif;margin:14px 0 4px}.ab h5.hs{font-size:19px}
+.ab .li{position:relative;padding-left:24px}.ab .li::before{content:"";position:absolute;left:4px;top:.55em;width:10px;height:10px;border-radius:50%;background:var(--c);border:2px solid var(--ln)}
+.ab a,.mt a{color:var(--ln);font-weight:600;word-break:break-all}.ab .slot{margin:14px 0}
+.qg{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}.quad{background:var(--q);border:3px solid var(--ln);border-radius:16px;padding:12px 14px;margin:0!important}.q1{--q:#ffb3a8}.q2{--q:#9be8c6}.q3{--q:#ffe08a}.q4{--q:#dcdcdc}@media(max-width:640px){.qg{grid-template-columns:1fr}}
+.mats{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.mt{background:#fff;border:3px solid var(--ln);border-left:14px solid var(--c);border-radius:18px;padding:10px 16px;transition:.2s}.mt:hover{transform:translate(6px,-3px);box-shadow:-6px 6px 0 var(--c)}.mt p{margin:.45em 0}
+.tsec{padding:26px 0}.tool{background:#fff;border:3px solid var(--ln);border-radius:24px;box-shadow:8px 8px 0 var(--c);padding:22px}.tool.fl{animation:pu .7s}.tool>h3{font-size:clamp(22px,3.4vw,30px)}.tool>.td{margin:6px 0 16px;color:#444}
+.pool{min-height:66px;display:flex;flex-wrap:wrap;gap:6px;padding:10px;border:3px dashed var(--ln);border-radius:16px;background:#fff6d8;flex:1;min-width:200px;align-content:flex-start;transition:.2s}
+.zn{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:14px 0}.z{min-height:140px;background:color-mix(in srgb,var(--c) 30%,#fff);border:3px dashed var(--ln);border-radius:18px;padding:10px;display:flex;flex-wrap:wrap;gap:6px;align-content:flex-start;transition:.2s}
+.z h4{flex-basis:100%;font-size:15px;display:flex;justify-content:space-between;gap:6px;align-items:flex-start}.z h4 small{display:block;font:400 11px 'Be Vietnam Pro';opacity:.8}.z h4 i{font-style:normal;background:var(--ln);color:#fff;border-radius:99px;padding:0 8px;font-size:13px;height:fit-content}
+.ov{border-style:solid!important;transform:scale(1.03);background:var(--c)!important}@media(max-width:800px){.zn{grid-template-columns:1fr 1fr}}
+.cn,.tk{border:3px solid var(--ln);background:var(--c,var(--kim));cursor:grab;touch-action:none;user-select:none;transition:transform .15s}.cn{width:40px;height:40px;border-radius:50%;font:800 14px 'Bricolage Grotesque';display:grid;place-items:center;padding:0}.cn:hover,.tk:hover{transform:scale(1.1)}
+.tk{display:inline-flex;gap:8px;align-items:center;border-radius:99px;padding:3px 6px 3px 14px;font:600 14px 'Be Vietnam Pro',sans-serif;background:#fff}.tk button{border:0;background:var(--ln);color:#fff;border-radius:50%;width:22px;height:22px;cursor:pointer;line-height:1}
+.sel{outline:4px solid var(--ln);transform:scale(1.18)}.ghost{position:fixed;z-index:60;pointer-events:none;opacity:.9;transform:translate(-50%,-50%) rotate(-6deg)}
+.tin{display:flex;gap:8px;margin:0 0 12px}.tin input,.lg input{flex:1;min-width:0;border:3px solid var(--ln);border-radius:14px;padding:8px 14px;font:inherit;background:#fff}
+.pm2{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center}.pm2 .pctl{margin:8px 0}@media(max-width:700px){.pm2{grid-template-columns:1fr;justify-items:center}}
+.lg{margin-top:14px}.lg ul{margin:10px 0 0 18px}.lg li small{opacity:.6;margin-right:6px}
+.dlg{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:34px 18px;margin-top:50px}.dlc{position:relative;background:#fff;border:3px solid var(--ln);border-radius:22px;box-shadow:6px 6px 0 var(--c);padding:22px 20px;transition:.2s}.dlc:hover{transform:translateY(-6px)}
+.dlc .sp{position:absolute;right:12px;top:-40px;width:78px;height:78px}.dlc h3{font-size:22px;margin:0 70px 8px 0}.dlb{margin-top:14px;display:inline-grid;place-items:center;width:52px;height:52px;border-radius:50%;border:3px solid var(--ln);background:var(--c);font-size:22px;text-decoration:none;color:var(--ln);box-shadow:3px 3px 0 var(--ln)}.dlb[aria-disabled="true"]{opacity:.35;pointer-events:none}
+/* ===== truyện mở đầu (đọc từng chương) ===== */
+.story{background:#fff;border:3px solid var(--ln);border-radius:22px;box-shadow:6px 6px 0 var(--c);padding:14px 16px;margin:6px 0 20px;outline:0}
+.sty-top{display:flex;align-items:center;gap:12px}.sty-top .sp{width:64px;height:64px;flex:none}.stn{display:flex;gap:8px;flex-wrap:wrap}
+.sp-p{min-width:44px;height:38px;padding:0 12px;border:3px solid var(--ln);border-radius:99px;background:#fff;font:800 14px 'Bricolage Grotesque',sans-serif;cursor:pointer;transition:.18s}.sp-p:hover{transform:translateY(-3px)}.sp-p.on{background:var(--c);box-shadow:3px 3px 0 var(--ln)}.sp-p.done{background:color-mix(in srgb,var(--c) 40%,#fff)}
+.sty-bar{height:12px;border:3px solid var(--ln);border-radius:99px;margin:12px 0;overflow:hidden;background:#fff}.sty-bar i{display:block;height:100%;width:calc(var(--pr,0)*100%);background:var(--c);transition:width .5s cubic-bezier(.3,1.3,.5,1)}
+.sty-stage{max-height:min(66vh,540px);overflow:auto;padding-right:8px;scrollbar-width:thin;overscroll-behavior:contain}
+.ch-c{display:none}.ch-c.on{display:block;animation:chin .45s cubic-bezier(.3,1.3,.5,1)}@keyframes chin{from{opacity:0;transform:translateX(calc(var(--dir,1)*40px))}}
+.ch-c h4{font-size:clamp(18px,2.6vw,24px);margin-bottom:10px}.sty-b p{margin:.8em 0;line-height:1.8}
+.sty-b .say,.sty-b .say2{background:color-mix(in srgb,var(--c) 14%,#fff);border-radius:14px;padding:8px 14px}.sty-b .say2{border-left:5px solid var(--c)}.sty-b .qt{margin-top:14px}
+.sty-nav{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px}.sty-nav button{width:50px;height:50px;border-radius:50%;border:3px solid var(--ln);background:var(--c);font:800 22px 'Bricolage Grotesque',sans-serif;cursor:pointer;box-shadow:3px 3px 0 var(--ln);transition:.12s}.sty-nav button:active{transform:translate(3px,3px);box-shadow:none}.sty-nav button:disabled{opacity:.3;pointer-events:none}.sty-nav small{font-weight:700}
+</style></head><body><svg width="0" height="0" style="position:absolute"
       aria-hidden="true"><defs><g id="fc"><circle class="ey" cx="39" cy="58"
             r="4.5" /><circle class="ey" cx="61" cy="58" r="4.5" /><circle
             cx="37.5" cy="56.5" r="1.6" fill="#fff" /><circle cx="59.5"
@@ -151,173 +204,828 @@ html{-webkit-text-size-adjust:100%}body{overflow-x:clip}img,svg,video,iframe{max
             cx="24" cy="78" rx="7" ry="4" fill="#0002" /><ellipse cx="78"
             cy="42" rx="5" ry="3.5" fill="#0002" /><ellipse cx="72" cy="82"
             rx="6" ry="3.5" fill="#0002" /><use
-            href="#fc" /></symbol></defs></svg><div id="pg"></div>
-    <nav><div class="w"><b class="nm">TIME SMART</b><div class="ln"><a class="pl" href="#s1" style="--c:var(--kim)">1</a><a class="pl" href="#s2" style="--c:var(--hoa)">2</a><a class="pl" href="#s3" style="--c:var(--thuy)">3</a><a class="pl" href="#s4" style="--c:var(--tho)">4</a><a class="pl" href="#s5" style="--c:var(--moc)">5</a><a class="pl rg" id="reg" href="#" hidden aria-label="Đăng ký">Đăng ký ↗</a></div></div></nav>
-    
-    <header class="hero" data-c="kim"><div class="fall" id="fall"></div><div
-        class="w"><div class="spi" aria-hidden="true"><svg class="sp"
-            viewBox="0 0 100 100" style="animation-delay:0.0s"><use
-              href="#sp-kim" /></svg><svg class="sp" viewBox="0 0 100 100"
-            style="animation-delay:0.5s"><use href="#sp-moc" /></svg><svg
-            class="sp" viewBox="0 0 100 100" style="animation-delay:1.0s"><use
-              href="#sp-thuy" /></svg><svg class="sp" viewBox="0 0 100 100"
-            style="animation-delay:1.5s"><use href="#sp-hoa" /></svg><svg
-            class="sp" viewBox="0 0 100 100" style="animation-delay:2.0s"><use
-              href="#sp-tho" /></svg></div><div class="tag">CHƯƠNG TRÌNH SINH
-          HOẠT ĐỒNG ĐẲNG</div><h1 class="big" aria-label="TIME SMART"><span
-            class="ch" style="--i:0">T</span><span class="ch"
-            style="--i:1">I</span><span class="ch" style="--i:2">M</span><span
-            class="ch" style="--i:3">E</span><span class="br"></span><span
-            class="ch" style="--i:5">S</span><span class="ch"
-            style="--i:6">M</span><span class="ch" style="--i:7">A</span><span
-            class="ch" style="--i:8">R</span><span class="ch"
-            style="--i:9">T</span></h1><div class="chips2"><span
-            class="cp" style="--c:var(--tho);--r:2deg">Tên nhóm dự án: Ngũ
-            hành</span></div>
-        <div class="cd"><small>Ngày, giờ thực hiện</small><div class="cdr"><div
-              class="cdn" id="cdn"></div><div class="cdt"
-              id="cdt"></div></div></div></div></header>
-    <div class="mq" aria-hidden="true"><div><span>TIME SMART ★ Time-Blocking ★
-          Buffer Block ★ Ma trận Eisenhower ★ 3 Whys ★ Pomodoro ★ Google
-          Calendar ★ Digital Minimalism ★ </span><span>TIME SMART ★
-          Time-Blocking ★ Buffer Block ★ Ma trận Eisenhower ★ 3 Whys ★ Pomodoro
-          ★ Google Calendar ★ Digital Minimalism ★ </span><span>TIME SMART ★
-          Time-Blocking ★ Buffer Block ★ Ma trận Eisenhower ★ 3 Whys ★ Pomodoro
-          ★ Google Calendar ★ Digital Minimalism ★ </span><span>TIME SMART ★
-          Time-Blocking ★ Buffer Block ★ Ma trận Eisenhower ★ 3 Whys ★ Pomodoro
-          ★ Google Calendar ★ Digital Minimalism ★ </span></div></div>
-    <section id="intro" data-c="kim"><div class="w"><div class="sh2 rv"><h2>VIDEO TÌNH HUỐNG: 24 GIỜ ĐI ĐÂU MẤT?</h2></div><div class="slot intro" data-intro="1" data-label="VIDEO TÌNH HUỐNG: 24 GIỜ ĐI ĐÂU MẤT?"></div><p style="text-align:center;margin-top:14px;font-weight:600">Không xem được? <a data-vl href="#" style="text-decoration:underline;color:inherit">Mở video trên Google Drive ↗</a></p></div></section>
-    <section id="kh" data-c="kim"><div class="w"><div class="sh2 rv"><h2>I. SINH HOẠT TOÀN KHÓA</h2></div><p class="lead rv">Dự
-          án được triển khai dưới dạng 5 bài học, mỗi bài kéo dài từ 50 - 60
-          phút, tập trung vào một nội dung cốt lõi. Các bài học được thiết kế
-          theo hướng dễ hiểu – dễ thực hành – có thể áp dụng trực tiếp vào kế
-          hoạch cá nhân.</p><div class="tl"><article id="s1" class="tc rv" tabindex="0"
-            style="--c:var(--kim);--d:0.0s" ><svg class="sp"
-              viewBox="0 0 100 100"><use href="#sp-kim" /></svg><div
-              class="tr"><small>STT</small><b class="nm">1</b></div><div
-              class="tr"><small>Ngày, giờ thực hiện</small><span>7h30,
-                20/10/2026</span></div><div class="tr"><small>Số
-                session</small><span>1</span></div><h3>Nhận thức giá trị thời
-              gian &amp; Phân bổ quỹ thời gian cá nhân</h3><div class="tf"><span
-                title="Hình thức">Offline</span><span title="Thời lượng">60
-                phút</span></div><details class="brief"><summary>Bạn sẽ học gì?</summary><ul><li>Time-Blocking: chia 24 giờ thành các khối</li><li>Buffer Block: túi khí cho biến cố</li><li>3 câu hỏi chọn ưu tiên: hạn chót, mất bao lâu, có ưu tiên không</li></ul></details></article><article id="s2" class="tc rv"
-            style="--c:var(--hoa);--d:0.08s" ><svg class="sp"
-              viewBox="0 0 100 100"><use href="#sp-hoa" /></svg><div
-              class="tr"><small>STT</small><b class="nm">2</b></div><div
-              class="tr"><small>Ngày, giờ thực hiện</small><span>10h00,
-                23/10/2026</span></div><div class="tr"><small>Số
-                session</small><span>1</span></div><h3>Nhận diện nguyên nhân trì
-              hoãn &amp; Kỹ thuật loại bỏ tác nhân gây xao nhãng</h3><div
-              class="tf"><span title="Hình thức">Offline</span><span
-                title="Thời lượng">55 phút</span></div><details class="brief"><summary>Bạn sẽ học gì?</summary><ul><li>Truy tìm 6 "nghi phạm" ăn trộm thời gian</li><li>Ma trận Eisenhower 4 góc</li><li>Kỹ thuật 3 Whys tìm nguyên nhân gốc</li></ul></details></article><article id="s3" class="tc rv" style="--c:var(--thuy);--d:0.16s"
-            ><svg class="sp" viewBox="0 0 100 100"><use
-                href="#sp-thuy" /></svg><div class="tr"><small>STT</small><b
-                class="nm">3</b></div><div class="tr"><small>Ngày, giờ thực
-                hiện</small><span>7h30, 27/10/2026</span></div><div
-              class="tr"><small>Số session</small><span>1</span></div><h3>Công
-              cụ hỗ trợ quản lý thời gian hiệu quả</h3><div class="tf"><span
-                title="Hình thức">Offline</span><span title="Thời lượng">65
-                phút</span></div><details class="brief"><summary>Bạn sẽ học gì?</summary><ul><li>Google Calendar × mã màu Eisenhower</li><li>Chia nhỏ dự án bằng app checklist</li><li>Dọn không gian số &amp; phản hồi 1–1–1</li></ul></details></article><article id="s4" class="tc rv"
-            style="--c:var(--tho);--d:0.24s" ><svg class="sp"
-              viewBox="0 0 100 100"><use href="#sp-tho" /></svg><div
-              class="tr"><small>STT</small><b class="nm">4</b></div><div
-              class="tr"><small>Ngày, giờ thực hiện</small><span>10h00,
-                30/10/2026</span></div><div class="tr"><small>Số
-                session</small><span>1</span></div><h3>Thí nghiệm Pomodoro :
-              Công thức tạo ra sự tập trung</h3><div class="tf"><span
-                title="Hình thức">Offline</span><span title="Thời lượng">65
-                phút</span></div><details class="brief"><summary>Bạn sẽ học gì?</summary><ul><li>Học 25 phút – nghỉ 5 phút</li><li>Cách ly tác nhân gây nhiễu: ghi lại → gạt sang → tiếp tục</li><li>Lập công thức Pomodoro cá nhân</li></ul></details></article><article id="s5" class="tc rv"
-            style="--c:var(--moc);--d:0.32s" ><svg class="sp"
-              viewBox="0 0 100 100"><use href="#sp-moc" /></svg><div
-              class="tr"><small>STT</small><b class="nm">5</b></div><div
-              class="tr"><small>Ngày, giờ thực hiện</small><span>19h30,
-                1/11/2026</span></div><div class="tr"><small>Số
-                session</small><span>1</span></div><h3>Thực hành phương pháp
-              Pomodoro</h3><div class="tf"><span
-                title="Hình thức">Online</span><span title="Thời lượng">150
-                phút</span></div><details class="brief"><summary>Bạn sẽ học gì?</summary><ul><li>2 phiên Pomodoro thực hành</li><li>Tự đánh giá &amp; so sánh hai phiên</li><li>Thử thách 3 ngày × 2 phiên mỗi ngày</li></ul></details></article></div></div></section>
-    <section id="xu" data-c="kim" hidden><div class="w"><div class="game rv" id="game"></div></div></section>
-    <section id="dangky"><div class="w"><div class="cta rv"><div class="tag">Đăng ký tham gia</div><h2>Sẵn sàng tiêu 24 xu thật thông minh?</h2><p class="lead">Bấm nút bên dưới để đăng ký.</p><a class="btn" data-reg href="#dangky">Mở form đăng ký ↗</a></div></div></section>
-    <footer><div class="w"><svg class="sp" viewBox="0 0 100 100"><use
+            href="#fc" /></symbol></defs></svg><div id="pg"></div><nav><div
+        class="w"><a class="logo nm" href="#/">TIME SMART</a><div class="ln"><a
+            class="nl" data-p="home" href="#/" style="--c:var(--kim)">Trang
+            Chủ</a><a class="nl" data-p="hoc" href="#/buoi-hoc"
+            style="--c:var(--hoa)">Các Buổi Học</a><a class="nl" data-p="tools"
+            href="#/cong-cu" style="--c:var(--thuy)">Công cụ Tương tác</a><a
+            class="nl" data-p="dl" href="#/tai-nguyen"
+            style="--c:var(--moc)">Kho Tài nguyên</a><a class="pl rg" id="reg"
+            href="#" hidden aria-label="Đăng ký">Đăng ký
+            ↗</a></div></div></nav><main><div class="page on"
+        data-page="home"><header class="hero" data-c="kim"><div class="fall"
+            id="fall"></div><div
+            class="w"><div class="spi" aria-hidden="true"><svg class="sp"
+                viewBox="0 0 100 100" style="animation-delay:0.0s"><use
+                  href="#sp-kim" /></svg><svg class="sp" viewBox="0 0 100 100"
+                style="animation-delay:0.5s"><use href="#sp-moc" /></svg><svg
+                class="sp" viewBox="0 0 100 100"
+                style="animation-delay:1.0s"><use
+                  href="#sp-thuy" /></svg><svg class="sp" viewBox="0 0 100 100"
+                style="animation-delay:1.5s"><use href="#sp-hoa" /></svg><svg
+                class="sp" viewBox="0 0 100 100"
+                style="animation-delay:2.0s"><use
+                  href="#sp-tho" /></svg></div><div class="tag">CHƯƠNG TRÌNH
+              SINH
+              HOẠT ĐỒNG ĐẲNG</div><h1 class="big" aria-label="TIME SMART"><span
+                class="ch" style="--i:0">T</span><span class="ch"
+                style="--i:1">I</span><span class="ch"
+                style="--i:2">M</span><span
+                class="ch" style="--i:3">E</span><span class="br"></span><span
+                class="ch" style="--i:5">S</span><span class="ch"
+                style="--i:6">M</span><span class="ch"
+                style="--i:7">A</span><span
+                class="ch" style="--i:8">R</span><span class="ch"
+                style="--i:9">T</span></h1><p class="sub">Làm chủ 24 đồng xu
+              thời gian của bạn</p><div class="chips2"><span
+                class="cp" style="--c:var(--tho);--r:2deg">Tên nhóm dự án: Ngũ
+                hành</span></div>
+            <div class="cd"><small>Ngày, giờ thực hiện</small><div
+                class="cdr"><div
+                  class="cdn" id="cdn"></div><div class="cdt"
+                  id="cdt"></div></div></div></div></header><div class="mq"
+          aria-hidden="true"><div><span>TIME SMART ★ Time-Blocking ★
+              Buffer Block ★ Ma trận Eisenhower ★ 3 Whys ★ Pomodoro ★ Google
+              Calendar ★ Digital Minimalism ★ </span><span>TIME SMART ★
+              Time-Blocking ★ Buffer Block ★ Ma trận Eisenhower ★ 3 Whys ★
+              Pomodoro
+              ★ Google Calendar ★ Digital Minimalism ★ </span><span>TIME SMART ★
+              Time-Blocking ★ Buffer Block ★ Ma trận Eisenhower ★ 3 Whys ★
+              Pomodoro
+              ★ Google Calendar ★ Digital Minimalism ★ </span><span>TIME SMART ★
+              Time-Blocking ★ Buffer Block ★ Ma trận Eisenhower ★ 3 Whys ★
+              Pomodoro
+              ★ Google Calendar ★ Digital Minimalism ★
+            </span></div></div><section id="rmap" data-c="kim"><div
+            class="w"><div class="sh2 rv"><h2>Thanh Lộ trình 5 Bước (Interactive
+                Roadmap)</h2></div><p class="lead rv">Cho phép sinh viên bấm vào
+              từng chặng (Buổi 1 ➔ Buổi 5) để mở nhanh nội dung tương
+              ứng.</p><div class="rm" id="rm"><button class="rn" data-n="1"
+                style="--c:var(--kim)"><span class=dot><svg class="sp"
+                    viewBox="0 0 100 100"><use
+                      href="#sp-kim" /></svg></span><b>Buổi 1</b><small>24 Đồng
+                  xu Thời gian &amp; Kỹ thuật
+                  Time-Blocking</small></button><button class="rn" data-n="2"
+                style="--c:var(--hoa)"><span class=dot><svg class="sp"
+                    viewBox="0 0 100 100"><use
+                      href="#sp-hoa" /></svg></span><b>Buổi 2</b><small>Nhận
+                  diện Trì hoãn &amp; Ma trận Eisenhower</small></button><button
+                class="rn" data-n="3" style="--c:var(--thuy)"><span
+                  class=dot><svg class="sp" viewBox="0 0 100 100"><use
+                      href="#sp-thuy" /></svg></span><b>Buổi 3</b><small>Kiến
+                  trúc sư Thời gian Số (Google Calendar &amp; Task
+                  Apps)</small></button><button class="rn" data-n="4"
+                style="--c:var(--tho)"><span class=dot><svg class="sp"
+                    viewBox="0 0 100 100"><use
+                      href="#sp-tho" /></svg></span><b>Buổi 4</b><small>Thí
+                  nghiệm Pomodoro – Công thức Tập trung</small></button><button
+                class="rn" data-n="5" style="--c:var(--moc)"><span
+                  class=dot><svg class="sp" viewBox="0 0 100 100"><use
+                      href="#sp-moc" /></svg></span><b>Buổi 5</b><small>Thực
+                  hành Pomodoro &amp; Đo lường Hiệu
+                  quả</small></button></div><div class="qp"
+              style="--c:var(--kim)"><svg class="sp big"
+                viewBox="0 0 100 100"><use href="#sp-kim" /></svg><h3>Buổi 1: 24
+                Đồng xu Thời gian &amp; Kỹ thuật Time-Blocking</h3><div
+                class="qm"><span>7h30,
+                  20/10/2026</span><span>Offline</span><span>60
+                  phút</span></div><div class="qi"><a href="#/buoi-hoc/1">Khái
+                  niệm "24 đồng xu thời gian" &amp; Nguyên tắc phân chia khối
+                  thời gian (Time-Blocking).</a><a href="#/buoi-hoc/1">3 Quy tắc
+                  chuẩn: Lồng ghép đời sống, Phân nhỏ khối học, Bắt buộc có khối
+                  dự phòng (Buffer Block).</a><a href="#/buoi-hoc/1">Kỹ thuật
+                  "Thẻ sự kiện bất ngờ" &amp; Bộ 3 câu hỏi ưu tiên (Hạn chót?
+                  Tốn bao lâu? Có ưu tiên không?).</a></div><div class="qt"><a
+                  href="#/cong-cu/xu">"Xếp 24 Đồng xu" (Time-Coin
+                  Allocator)</a></div><a class="qgo" href="#/buoi-hoc/1"
+                aria-label="Buổi 1">→</a></div><div class="qp"
+              style="--c:var(--hoa)"><svg class="sp big"
+                viewBox="0 0 100 100"><use href="#sp-hoa" /></svg><h3>Buổi 2:
+                Nhận diện Trì hoãn &amp; Ma trận Eisenhower</h3><div
+                class="qm"><span>10h00,
+                  23/10/2026</span><span>Offline</span><span>55
+                  phút</span></div><div class="qi"><a href="#/buoi-hoc/2">Hồ sơ
+                  vụ án: Truy tìm 6 "Nghi phạm" gây thất thoát thời gian &amp;
+                  Bắt bệnh "Bận rộn giả tạo".</a><a href="#/buoi-hoc/2">Vũ khí
+                  Ma trận Eisenhower (4 Góc phần tư dựa trên Độ khẩn cấp &amp;
+                  Tầm quan trọng).</a><a href="#/buoi-hoc/2">Phân biệt: Giải trí
+                  hợp lý vs. Giải trí thiếu kiểm soát.</a><a
+                  href="#/buoi-hoc/2">Kỹ thuật "Thẩm vấn khẩn cấp" (3 Whys) để
+                  bóc tách nguyên nhân gốc rễ của trì hoãn.</a></div><div
+                class="qt"><a href="#/cong-cu/eisenhower">Sơ đồ Kéo-Thả Ma trận
+                  Eisenhower</a></div><a class="qgo" href="#/buoi-hoc/2"
+                aria-label="Buổi 2">→</a></div><div class="qp"
+              style="--c:var(--thuy)"><svg class="sp big"
+                viewBox="0 0 100 100"><use href="#sp-thuy" /></svg><h3>Buổi 3:
+                Kiến trúc sư Thời gian Số (Google Calendar &amp; Task
+                Apps)</h3><div class="qm"><span>7h30,
+                  27/10/2026</span><span>Offline</span><span>65
+                  phút</span></div><div class="qi"><a href="#/buoi-hoc/3">Hướng
+                  dẫn phối hợp bộ đôi: Google Calendar (Quản lý thời gian/Khóa
+                  khung giờ) + Task App (Quản lý tác vụ/Chia nhỏ việc).</a><a
+                  href="#/buoi-hoc/3">Công thức 3 – 3 – 2 &amp; Tích hợp Mã màu
+                  Eisenhower vào Calendar (Đỏ, Xanh lá, Xám, Vàng).</a><a
+                  href="#/buoi-hoc/3">Checklist "3 Phút Dọn dẹp Không gian số"
+                  (Digital Minimalism).</a><a href="#/buoi-hoc/3">Công thức Phản
+                  hồi 3 phần (1 Điểm tốt + 1 Vấn đề + 1 Gợi ý).</a></div><a
+                class="qgo" href="#/buoi-hoc/3"
+                aria-label="Buổi 3">→</a></div><div class="qp"
+              style="--c:var(--tho)"><svg class="sp big"
+                viewBox="0 0 100 100"><use href="#sp-tho" /></svg><h3>Buổi 4:
+                Thí nghiệm Pomodoro – Công thức Tập trung</h3><div
+                class="qm"><span>10h00,
+                  30/10/2026</span><span>Offline</span><span>65
+                  phút</span></div><div class="qi"><a href="#/buoi-hoc/4">Nguyên
+                  lý Pomodoro (25 phút tập trung – 5 phút nghỉ) &amp; Chu trình
+                  Plan – Monitor – Evaluate.</a><a href="#/buoi-hoc/4">Kỹ thuật
+                  "Cách ly" tác nhân gây nhiễu (Ghi ra giấy ➔ Gạt sang bên ➔
+                  Tiếp tục).</a><a href="#/buoi-hoc/4">Hướng dẫn điều chỉnh nhịp
+                  Pomodoro phù hợp với cá nhân: Mỗi người tự chọn một nhiệm vụ
+                  thực tế cần hoàn thành trong tuần tới, ghi rõ thời gian thực
+                  hiện, số lượng phiên Pomodoro dự kiến và cách sắp xếp thời
+                  gian nghỉ ngơi giữa các phiên. Kế hoạch này sẽ được đồng bộ
+                  trực tiếp với lịch tuần trên Google Calendar đã xây dựng ở
+                  Buổi 3.</a></div><div class="qt"><a
+                  href="#/cong-cu/pomodoro">Đồng hồ Pomodoro Online (Integrated
+                  Timer)</a></div><a class="qgo" href="#/buoi-hoc/4"
+                aria-label="Buổi 4">→</a></div><div class="qp"
+              style="--c:var(--moc)"><svg class="sp big"
+                viewBox="0 0 100 100"><use href="#sp-moc" /></svg><h3>Buổi 5:
+                Thực hành Pomodoro &amp; Đo lường Hiệu quả</h3><div
+                class="qm"><span>19h30,
+                  1/11/2026</span><span>Online</span><span>150
+                  phút</span></div><div class="qi"><a href="#/buoi-hoc/5">Các
+                  bước chuẩn bị cho một phiên Pomodoro chuẩn chỉnh.</a><a
+                  href="#/buoi-hoc/5">Nhật ký tự đánh giá &amp; So sánh kết quả
+                  giữa các lần thực hành.</a></div><div class="qt"><a
+                  href="#/cong-cu/pomodoro">Đồng hồ Pomodoro Online (Integrated
+                  Timer)</a></div><a class="qgo" href="#/buoi-hoc/5"
+                aria-label="Buổi 5">→</a></div></div></section><section
+          id="intro" data-c="kim"><div class="w"><div class="sh2 rv"><h2>Video
+                Giới thiệu Dự án &amp; Nhóm</h2></div><div class="slot intro"
+              data-intro="1"
+              data-label="Video Giới thiệu Dự án &amp; Nhóm"></div><p
+              style="text-align:center;margin-top:14px;font-weight:600">Không
+              xem được? <a data-vl href="#"
+                style="text-decoration:underline;color:inherit">Mở video trên
+                Google Drive ↗</a></p></div></section><section id="demo"
+          data-c="hoa"><div class="w"><div class="sh2 rv"><h2>Sản phẩm demo (
+                google calendar )</h2></div><div class="slot intro"
+              data-demo="1"
+              data-label="Sản phẩm demo ( google calendar )"></div></div></section><section
+          id="dangky"><div class="w"><div class="cta rv"><div class="tag">Đăng
+                ký tham gia</div><h2>Sẵn sàng tiêu 24 xu thật thông minh?</h2><p
+                class="lead">Bấm nút bên dưới để đăng ký.</p><a class="btn"
+                data-reg href="#dangky">Mở form đăng ký
+                ↗</a></div></div></section></div><div class="page"
+        data-page="hoc"><section class="pt" data-c="hoa"><div class="w"><div
+              class="sh2 rv"><h2><b>Trang Chi tiết Các Buổi Học (Session
+                  Learning Hub)</b></h2></div><p class="lead rv">Mỗi buổi học
+              được thiết kế như một <b>Bài học tương tác (Interactive
+                Module)</b> gồm các phần: Mục tiêu ➔ Nội dung cốt lõi ➔ Học liệu
+              số &amp; Template ➔ Thử thách/Bài tập.</p></div></section><section
+          class="ss" id="s1" data-c="kim" style="--c:var(--kim)"><div
+            class="w"><div class="sh rv"><span class="no">1</span><div><div
+                  class="pre">Buổi 1:</div><h2>24 Đồng xu Thời gian &amp; Kỹ
+                  thuật Time-Blocking</h2></div><svg class="sp big"
+                viewBox="0 0 100 100"><use href="#sp-kim" /></svg></div>
+            <h4 class="lab rv">Nội dung hiển thị:</h4><div
+              class="acc rv"><details><summary><span>Khái niệm
+                    "24 đồng xu thời gian" &amp; Nguyên tắc phân chia khối thời
+                    gian (Time-Blocking).</span></summary><div
+                  class="ab"><p>Khái niệm "24 đồng xu": Mỗi ngày mỗi người nhận
+                    được 24 giờ tương đương 24 đồng xu thời gian, trôi qua là
+                    mất hẳn và không thể tích lũy hay vay
+                    mượn.</p></div></details><details><summary><span>3 Quy tắc
+                    chuẩn: Lồng ghép đời sống, Phân nhỏ khối học, Bắt buộc có
+                    khối dự phòng (Buffer Block).</span></summary><div
+                  class="ab"><p>Thay vì lập danh sách việc cần làm (To-Do List)
+                    rời rạc, hãy đóng khung từng giờ cố định cho từng nhóm nhiệm
+                    vụ cụ thể.</p><h5><b>3 Quy tắc ngầm bắt buộc:</b></h5><p
+                    class="li"><b>Lồng ghép đời sống:</b> Lịch thực tế phải chứa
+                    các khối sinh hoạt (ăn uống, đi lại, tập thể dục, thư giãn),
+                    không xếp lịch kiểu "người máy".</p><p class="li"><b>Chia
+                      nhỏ khối học (Task Batching):</b> Tách thời gian học thành
+                    nhiều khối ngắn trong ngày thay vì dồn liên tục 5–6
+                    tiếng.</p><p class="li"><b>Khối dự phòng (Buffer Block):</b>
+                    Bắt buộc chừa 1–2 khối thời gian trống trong ngày để hấp thụ
+                    các sự cố/biến cố bất ngờ (xe hỏng, deadline đột
+                    xuất...).</p></div></details><details><summary><span>Kỹ
+                    thuật "Thẻ sự kiện bất ngờ" &amp; Bộ 3 câu hỏi ưu tiên (Hạn
+                    chót? Tốn bao lâu? Có ưu tiên không?).</span></summary><div
+                  class="ab"><p>Khi chỉ còn ít thời gian (ví dụ 3 tiếng cuối
+                    ngày) nhưng có quá nhiều việc, dùng <b>Bộ 3 câu hỏi ưu
+                      tiên</b>:</p><p class="li"><i>Hạn chót khi nào (Deadline)?
+                    </i></p><p class="li"><i>Tốn bao nhiêu thời gian thực hiện
+                      (Duration)?
+                    </i></p><p class="li"><i>Có thực sự ưu tiên ngay hay có thể
+                      chuyển sang khối thời gian ngày
+                      khác?</i></p></div></details></div><h4 class="lab rv">Học
+              liệu & Công cụ đi kèm:</h4><div class="mats"><div
+                class="mt rv"><p>Video/Podcast cẩm nang giải thích khái niệm
+                  "24 đồng xu".</p></div><div class="mt rv"><p>Mẫu tải về: Phiếu
+                  hoạt động <i>"Ví thời gian của tôi"</i> &amp; Nhật ký theo dõi
+                  <i>TIME COINS</i> 3
+                  ngày.</p></div></div></div></section><section class="ss"
+          id="s2" data-c="hoa" style="--c:var(--hoa)"><div class="w"><div
+              class="sh rv"><span class="no">2</span><div><div class="pre">Buổi
+                  2:</div><h2>Nhận diện Trì hoãn &amp; Ma trận
+                  Eisenhower</h2></div><svg class="sp big"
+                viewBox="0 0 100 100"><use href="#sp-hoa" /></svg></div>
+            <h4 class="lab rv">Nội dung hiển thị:</h4><div
+              class="acc rv"><details open><summary><span>Hồ sơ vụ án: Truy tìm
+                    6 "Nghi phạm" gây thất thoát thời gian &amp; Bắt bệnh
+                    "Bận rộn giả tạo".</span></summary><div class="ab"><div
+                    class="story" tabindex="0" style="--c:var(--hoa)"><div
+                      class="sty-top"><svg class="sp" viewBox="0 0 100 100"><use
+                          href="#sp-hoa" /></svg><div class="stn"><button
+                          class="sp-p" data-k="0"
+                          aria-label="1">I</button><button class="sp-p"
+                          data-k="1" aria-label="2">II</button><button
+                          class="sp-p" data-k="2"
+                          aria-label="3">III</button><button class="sp-p"
+                          data-k="3" aria-label="4">IV</button><button
+                          class="sp-p" data-k="4"
+                          aria-label="5">💡</button></div></div><div
+                      class="sty-bar"><i></i></div><div
+                      class="sty-stage"><article class="ch-c"><h4><b>CHƯƠNG I:
+                            BÍ ẨN VỤ ÁN "5 GIỜ BIẾN MẤT"</b></h4><div
+                          class="sty-b"><p>Đồng hồ treo tường trong căn phòng
+                            trọ nhỏ ở khu Tân Xã chậm rãi nhích từng nhịp tích
+                            tắc. Kim ngắn chạm đúng số 12, kim dài thẳng đứng.
+                            Đúng 00:00 giờ đêm.</p><p>Minh — cậu sinh viên năm
+                            nhất ngành Marketing — ôm đầu gục xuống bàn học, mặt
+                            cắt không còn một giọt máu. Tóc cậu bù xù, đôi mắt
+                            thâm quầng lộ rõ vẻ hoảng loạn. Trên màn hình máy
+                            tính đang mở sẵn phần mềm slide, một khoảng trắng
+                            xóa đến rợn người đập vào mắt cậu. Không một dòng
+                            chữ, không một hình ảnh.</p><p
+                            class="say">"Không thể nào... Không thể như thế này được!"
+                            Minh mếu máo, giọng run run tự lẩm bẩm.
+                            "Rõ ràng mình đã ngồi cắm mặt ở cái bàn này từ đúng 7 giờ tối đến giờ. Tròn trĩnh 5 tiếng đồng hồ! Tại sao file slide vẫn trắng tinh thế này?! Thời gian của mình đã đi đâu mất rồi?"</p><p>Xung
+                            quanh Minh là một "bãi chiến trường" kỳ lạ. Trên mặt
+                            bàn gỗ, 20 cây bút highlight đủ màu sắc được xếp
+                            thẳng tắp theo thứ tự dải màu cầu phồng. Góc trái là
+                            đống vỏ bánh kẹo đã bóc dở, còn chiếc điện thoại
+                            thông minh thì cứ vài phút lại phát ra tiếng
+                            "ting ting" cùng ánh sáng lập lòe từ các thông báo
+                            mạng xã hội.</p><p><i>Rắc!</i></p><p>Tiếng cánh cửa
+                            phòng trọ khép hờ bật mở nhẹ nhàng. Một làn gió đêm
+                            lành lạnh tràn vào phòng.</p><p>Dưới ánh đèn đường
+                            hắt qua khung cửa sổ, hai bóng người bước vào. Người
+                            đi trước cao gầy, khoác chiếc áo choàng dài màu xám,
+                            tay cầm chiếc kính lúp mạ bạc. Theo sau là một người
+                            đàn ông trung niên có dáng vẻ đàng hoàng, tay xách
+                            chiếc túi da quen thuộc.</p><p
+                            class="say">"Cửa không khóa, và tiếng than khóc của một linh hồn bế tắc đã dẫn chúng ta đến đây, Watson,"
+                            người đàn ông cao gầy lên tiếng, giọng nói sắc lẹm
+                            và tràn đầy sự tự tin.</p><p>Minh giật bắn mình,
+                            suýt ngã lộn cổ khỏi chiếc ghế xoay:
+                            "Ai... Ai đó?! Các vị là ai mà tự tiện vào phòng tôi?"</p><p>Dr.
+                            Watson bước tới, ôn tồn xua tay:
+                            "Cậu đừng sợ, cậu sinh viên trẻ. Đây là Sherlock Holmes — nhà tham vấn trinh thám lừng danh. Còn tôi là Bác sĩ Watson. Chúng tôi vô tình đi ngang qua và nghe thấy vụ án '5 giờ biến mất' của cậu".</p><p>Sherlock
+                            Holmes không nói không rằng, tiến thẳng tới bàn học
+                            của Minh. Cậu rút chiếc kính lúp ra, soi xét tỉ mỉ
+                            từng vết tích trên bàn: từ độ nghiêng của chiếc hộp
+                            bút, độ ấm của chiếc điện thoại, cho đến danh sách
+                            15 tab Chrome đang mở dở trên trình duyệt.</p><p
+                            class="say">"Thật là một hiện trường vụ án hoàn hảo,"
+                            Holmes khẽ mỉm cười, đôi mắt rực sáng.</p><p
+                            class="say">"Holmes," Watson nhíu mày hỏi,
+                            "chẳng lẽ trong gian phòng đóng kín này thực sự có một kẻ trộm ma quái nào đó đã đột nhập và tẩu thoát cùng 5 giờ đồng hồ của cậu sinh viên này sao?"</p><p
+                            class="say">"Không có tên trộm ma quái nào ở đây cả, Watson,"
+                            Holmes quay lại, dường như đã nhìn thấu toàn bộ chân
+                            lý. "Kẻ thủ ác đang ẩn giấu ngay tại hiện trường
+                            này. Và nó đã để lại tới <b>6 vết tích bằng
+                              chứng</b>!"</p></div></article><article
+                        class="ch-c"><h4><b>CHƯƠNG II: LỘ DIỆN 6 NGHI PHẠM VÀ
+                            CÁI BẪY "BẬN RỘN GIẢ TẠO"</b></h4><div
+                          class="sty-b"><p>Holmes đưa tay vào túi áo choàng, rút
+                            ra 6 tấm thẻ màu xám và rải chúng lên bàn học của
+                            Minh. Mỗi tấm thẻ mang tên một "nghi phạm" giấu
+                            mặt:</p><p class="li"><b>Mạng xã hội &amp; Thông báo
+                              điện thoại
+                            </b></p><p class="li"><b>Suy nghĩ quá nhiều / Lo âu
+                              bế tắc
+                            </b></p><p class="li"><b>Bận rộn giả tạo
+                            </b></p><p class="li"><b>Trì hoãn tâm lý do sợ sai /
+                              sợ khó
+                            </b></p><p class="li"><b>Mục tiêu mơ hồ / Không lập
+                              kế hoạch
+                            </b></p><p class="li"><b>Cám dỗ từ môi trường xung
+                              quanh
+                            </b></p><p>Minh tròn mắt nhìn 6 tấm thẻ, rồi ngơ
+                            ngác nhìn Holmes:
+                            "Tôi... tôi không hiểu. Rõ ràng tối nay tôi không hề đi chơi, cũng không xem phim. Tôi đã ngồi lỳ ở đây suốt 5 tiếng đồng hồ cơ mà!"</p><p
+                            class="say">"Đó chính là ảo tưởng nguy hiểm nhất của cậu, Minh ạ,"
+                            Holmes cầm lên một cây bút highlight màu xanh huỳnh
+                            quang, lắc lắc trước mặt Minh.</p><p
+                            class="say">"Hãy nhìn lại vết tích hiện trường xem! Cậu bắt đầu ngồi vào bàn lúc 19h00. Nhưng cậu đã làm gì trong 45 phút đầu tiên? Cậu đứng dậy lau sạch từng vết bụi trên mặt bàn, xếp lại đúng 20 cây bút highlight theo tông màu, mở 15 tab Google tìm tài liệu rồi lại loay hoay đổi hình nền máy tính cho có 'hứng' học. Cậu có nhận ra đó là gì không?"</p><p>Holmes
+                            đập mạnh tay xuống tấm thẻ số 3:
+                            <b>"BẬN RỘN GIẢ TẠO!"</b></p><p>Minh giật mình, mồ
+                            hôi hột bắt đầu lăn dài trên trán.</p><p
+                            class="say">"Não bộ con người rất tinh xảo," Holmes
+                            giải thích, giọng sâu lắng. "Khi đối mặt với một
+                            nhiệm vụ khó khăn, não bộ sẽ tự động sinh ra cơ chế
+                            trốn tránh. Nó xui khiến cậu làm những việc vặt vĩnh
+                            như lau bàn, xếp bút, dọn dẹp... để tạo ra một
+                            <b>cảm giác ảo giác</b> rằng
+                            <i>'Tôi đang làm việc vô cùng chăm chỉ'</i>. Nhưng
+                            trên thực tế, cậu chỉ đang dùng sự bận rộn giả tạo
+                            đó để che đậy nỗi sợ phải bắt tay vào công việc thực
+                            sự!"</p><p
+                            class="say">"Và lý do khiến cậu dễ dàng sập cái bẫy này,"
+                            Holmes chỉ kính lúp vào cuốn sổ tay đang mở của
+                            Minh, "chính là <b>Nghi phạm số 5: Mục tiêu mơ
+                              hồ</b>!"</p><p>Watson tò mò ghé mắt nhìn vào cuốn
+                            sổ: "Trong sổ cậu ấy ghi gì thế, Holmes?"</p><p
+                            class="say">"Cậu ấy ghi:
+                            <i>'Tối nay làm bài tập Marketing'</i>," Holmes tặc
+                            lưỡi.
+                            "Một dòng chữ cực kỳ mơ hồ! Khi cậu giao cho bộ não một lệnh chung chung như vậy, nó sẽ rơi vào trạng thái quá tải và hoảng sợ vì không biết phải bắt đầu từ đâu, làm cái gì trước, cái gì sau. Và thế là, 5 tiếng đồng hồ của cậu đã 'bốc hơi' không một vết tích!"</p></div></article><article
+                        class="ch-c"><h4><b>CHƯƠNG III: VŨ KHÍ TỐI THƯỢNG – MA
+                            TRẬN EISENHOWER</b></h4><div class="sty-b"><p>Minh
+                            gục đầu xuống bàn, giọng nghẹn ngào:
+                            "Thám tử nói đúng hoàn toàn... Em cứ nghĩ ngồi ở bàn 5 tiếng nghĩa là em đã học 5 tiếng. Em phải làm gì để thoát khỏi cơn ác mộng này đây?"</p><p>Sherlock
+                            Holmes mỉm cười thanh thản. Cậu vung tay khoác chiếc
+                            áo choàng, bước tới mảng tường trống trong phòng.
+                            Cậu dùng một viên phấn trắng kéo hai đường thẳng
+                            vuông góc, chia mảng tường thành <b>4 Góc phần
+                              tư</b>.</p><p
+                            class="say">"Để không bao giờ trở thành nạn nhân của những vụ án mất tích thời gian nữa, ta truyền thụ cho cậu một vũ khí tối thượng,"
+                            Holmes nói. "Đây là di sản của Tổng thống Mỹ Dwight
+                            D. Eisenhower: <b>Ma trận
+                              Eisenhower</b>."</p><p>Holmes vừa chỉ vào từng ô
+                            vừa giải thích tường tận:</p><p class="li"><b>Góc 1
+                              (Gấp &amp; Quan trọng - Góc Khủng hoảng):</b>
+                            "Đây là nơi chứa các Deadline sát nút, những bài thi chỉ còn vài tiếng là nộp. Nếu cậu để công việc dồn ứ ở đây quá nhiều, cậu sẽ luôn sống trong kiệt sức và căng thẳng."</p><p
+                            class="li"><b>Góc 2 (Không gấp nhưng Quan trọng -
+                              Góc Phát triển):</b> "Đây chính là <b>GÓC
+                              VÀNG</b>! Nó bao gồm việc tự học, học ngoại ngữ,
+                            chia nhỏ đồ án lớn, tập thể dục... Những việc này
+                            không có ai thúc ép cậu ngay lập tức, nhưng nó quyết
+                            định sự thành bại lâu dài của cậu. Hãy chủ động lên
+                            lịch cho Góc 2 vào những khung giờ vàng tỉnh táo
+                            nhất!"</p><p class="li"><b>Góc 3 (Gấp nhưng Không
+                              quan trọng - Góc Phản ứng):</b>
+                            "Tin nhắn rác Messenger, chuông điện thoại reo, tin nhắn group chat linh tinh... Việc này gấp với người khác nhưng không giúp ích gì cho mục tiêu của cậu. Hãy học cách tối ưu hoặc từ chối!"</p><p
+                            class="li"><b>Góc 4 (Không gấp &amp; Không quan
+                              trọng - Góc Lãng phí):</b>
+                            "Lướt TikTok vô thức, xem phim liên tục 4 tiếng, chơi game xuyên đêm..."</p><p>Minh
+                            ngập ngừng giơ tay hỏi:
+                            "Thưa thám tử, nếu lướt TikTok hay chơi game nằm ở Góc 4... chẳng lẽ sinh viên chúng em phải biến thành cỗ máy, hoàn toàn không được giải trí sao?"</p><p
+                            class="say">"Một câu hỏi rất hay, Minh ạ!" Holmes
+                            trầm ồ tán thưởng. "Một thợ săn thời gian giỏi không
+                            phải là kẻ triệt phá giải trí, mà là người biết đặt
+                            giải trí đúng vị trí. Hãy phân biệt rõ hai khái niệm
+                            này:</p><p class="li"><b>Giải trí hợp lý:</b> Là khi
+                            cậu đã chủ động xếp nó vào lịch trình ở Góc 2 như
+                            một <b>phần thưởng</b>. Ví dụ:
+                            <i>'Sau khi hoàn thành xong 2 chu kỳ học tập trung, mình được lướt TikTok 15 phút'</i>.
+                            Lúc này cậu giải trí cực kỳ thoải mái, không hề cảm
+                            thấy dằn vặt hay tội lỗi!</p><p class="li"><b>Giải
+                              trí thiếu kiểm soát:</b> Là khi hoạt động Góc 4 tự
+                            do chen ngang vào lúc cậu đang cần tập trung. Đang
+                            làm bài mà thấy thông báo nhảy lên liền bấm vào xem
+                            2 tiếng.</p><p>Sự khác biệt không nằm ở hành động
+                            lướt TikTok, mà nằm ở chỗ: <b>Nó nằm trong kế hoạch
+                              hay chen ngang kế hoạch!</b>"</p><div
+                            class="qt"><a href="#/cong-cu/eisenhower">Sơ đồ
+                              Kéo-Thả Ma trận
+                              Eisenhower</a></div></div></article><article
+                        class="ch-c"><h4><b>CHƯƠNG IV: KỸ THUẬT
+                            "THẨM VẤN KHẨN CẤP" VÀ BÌNH MINH MỚI</b></h4><div
+                          class="sty-b"><p>Watson gật gù tâm đắc, rồi quay sang
+                            Minh:
+                            "Nào, cậu sinh viên. Giờ cậu đã có Ma trận Eisenhower rồi, nhưng chúng ta cần tìm ra vết thương sâu nhất trong tâm trí cậu. Holmes, hãy dùng chiêu đó đi!"</p><p>Holmes
+                            tiến lại gần Minh, ánh mắt sắc bén như xoáy sâu vào
+                            tâm trí người đối diện:</p><p class="say">"Bây giờ,
+                            hãy bước vào quy trình <b>Thẩm vấn khẩn cấp — 3 Lần
+                              Hỏi Tại Sao (3 Whys)</b> để bóc tách nguyên nhân
+                            gốc rễ đằng sau hành vi trì hoãn của
+                            cậu!"</p><p>Holmes giơ một ngón tay lên:</p><p
+                            class="say2">— <b>Biểu hiện bề nổi:</b> <i>Tại sao
+                              tối nay cậu lại ngồi lướt điện thoại và dọn bàn
+                              thay vì viết slide?</i></p><p class="say2">—
+                            <i>Minh (gãi đầu):</i>
+                            "Dạ... vì em mở file Word ra thấy bài khó quá, không biết viết gì ạ..."</p><p>Holmes
+                            giơ ngón tay thứ hai:</p><p class="say2">— <b>Tại
+                              sao lần 1?</b> <i>Tại sao cậu lại không biết viết
+                              gì?</i></p><p class="say2">— <i>Minh:</i>
+                            "Vì... vì đề bài cô giao chung chung quá, em không biết phải bắt đầu từ câu nào..."</p><p>Holmes
+                            giơ ngón tay thứ ba, giọng trầm xuống:</p><p
+                            class="say2">— <b>Tại sao lần 2 (Nguyên nhân gốc
+                              rễ)?</b> <i>Tại sao việc đề bài chung chung lại
+                              khiến cậu dừng lại hoàn toàn?</i></p><p
+                            class="say2">— <i>Minh chớp mắt, lặng người mất vài
+                              giây rồi cúi đầu thú nhận:</i>
+                            "...Vì em sợ ạ. Em sợ viết ra không hay, sợ làm slide không đẹp sẽ bị các bạn trong nhóm chê cười. Em sợ thất bại..."</p><p
+                            class="say">"Đó chính là câu trả lời thực sự!"
+                            Holmes thốt lên, giọng tràn đầy sự cảm thông. "Trì
+                            hoãn chưa bao giờ là vấn đề lười biếng hay quản lý
+                            thời gian kém. <b>Trì hoãn bản chất là một vấn đề
+                              tâm lý!</b> Cậu trì hoãn vì mục tiêu quá lớn gây
+                            quá tải, và vì cậu sợ làm không hoàn
+                            hảo!"</p><p>Minh ngước nhìn Holmes, đôi mắt ngấn lệ
+                            nhưng đã đốm lên những tia sáng tự tin. Cậu cầm bút
+                            lên, gạch xóa dòng chữ mơ hồ trong sổ tay và viết
+                            lại thành những dòng ngắn gọn, sắc nét:</p><p>🎯
+                            <b>Kế hoạch hành động mới:</b></p><p class="li">Mở
+                            file Word, viết đúng 3 dòng mở bài trong 15
+                            phút.</p><p class="li">Tìm 2 hình ảnh minh họa cho
+                            slide 1.</p><p class="li">Tắt toàn bộ thông báo điện
+                            thoại trong 25 phút tới.</p><p class="li">Phần
+                            thưởng: Xem 1 video YouTube 5 phút.</p><p
+                            class="say">"Tốt lắm!" Holmes mỉm cười hài lòng.
+                            "Cậu đã biến một mục tiêu khổng lồ đáng sợ thành những bước đi tí hon. Khi bước đi đủ nhỏ, sự sợ hãi sẽ không còn chỗ đứng!"</p><p>Ngoài
+                            cửa sổ, những tia sáng đầu tiên của bình minh bắt
+                            đầu hắt qua vòm cây. Đêm đã qua và một ngày mới lại
+                            bắt đầu.</p><p>Sherlock Holmes khoác lại chiếc áo
+                            choàng dài, bước ra phía cửa sổ cùng Dr. Watson.
+                            Trước khi nhảy qua gờ cửa sổ bước vào màn sương sớm,
+                            nhà trinh thám lừng danh quay đầu lại, vẫy tay chào
+                            Minh:</p><p class="say">"Vụ án '5 giờ biến mất'
+                            chính thức khép lại tại đây! Hãy nhớ lấy bài học
+                            này, hỡi nhà đầu tư thời gian trẻ tuổi: <b>Đừng tự
+                              dối mình bằng số giờ ngồi ôm bàn học, hãy đo lường
+                              bằng kết quả đầu ra thực tế!</b> Hẹn gặp lại cậu ở
+                            những hành trình tiếp theo!"</p><p>Minh nhìn theo
+                            bóng dáng hai người khuất dần trong sương sớm. Cậu
+                            hít một hơi thật sâu, ngồi thẳng lưng trước bàn học,
+                            nhẹ nhàng bấm đồng hồ đếm ngược 25 phút và bắt đầu
+                            gõ những dòng chữ đầu tiên lên trang
+                            slide...</p></div></article><article
+                        class="ch-c"><h4><b>💡 BÀI HỌC CỐT LÕI TỪ TRUYỆN (TIME
+                            SMART - BUỔI 2)</b></h4><div class="sty-b"><p
+                            class="li"><b>Phân biệt Thời gian ngồi bàn &amp;
+                              Hiệu quả thực tế:</b> 5 giờ ngồi ôm bàn học khác
+                            hoàn toàn với 5 giờ học hiệu quả. Hãy đo lường bằng
+                            kết quả đầu ra, loại bỏ "bận rộn giả tạo" (dọn dẹp,
+                            dán highlight, lướt web vô định).</p><p
+                            class="li"><b>Làm chủ Ma trận Eisenhower:</b> Chủ
+                            động kéo các công việc quan trọng nhưng không gấp
+                            (Góc 2) lên ưu tiên hàng đầu để không bao giờ bị rơi
+                            vào thế khủng hoảng (Góc 1).</p><p
+                            class="li"><b>Giải trí có kế hoạch:</b> Đặt hoạt
+                            động giải trí vào lịch trình như một phần thưởng cố
+                            định (ở Góc 2) để tận hưởng trọn vẹn mà không bị dằn
+                            vặt hay tội lỗi.</p><p class="li"><b>Trì hoãn là Tâm
+                              lý:</b> Dùng kỹ thuật "3 Whys" để tìm ra nguyên
+                            nhân gốc rễ (sợ sai, sợ khó). Đập tan sự trì hoãn
+                            bằng cách chia nhỏ mục tiêu lớn thành các bước hành
+                            động cụ thể, siêu nhỏ và dễ thực
+                            hiện.</p></div></article></div><div
+                      class="sty-nav"><button data-sd="-1"
+                        aria-label="←">←</button><small
+                        class="cnt"></small><button data-sd="1"
+                        aria-label="→">→</button></div></div><h5
+                    class="hs"><b>Bắt bệnh 6 "Nghi phạm" ăn trộm thời
+                      gian</b></h5><p class="li">Mạng xã hội &amp; Thông báo
+                    điện thoại.</p><p class="li">Suy nghĩ quá nhiều / Lo âu bế
+                    tắc.</p><p class="li"><b>Bận rộn giả tạo:</b> Dọn bàn học
+                    ngăn nắp, xếp hộp bút, mở 20 tab Chrome nhưng không viết
+                    được dòng nào.</p><p class="li">Trì hoãn tâm lý (sợ sai, sợ
+                    khó, sợ quá tải).</p><p class="li">Không lập kế hoạch / Mục
+                    tiêu mơ hồ ("Tối nay học bài" thay vì
+                    "Tối nay viết 300 từ").</p><p class="li">Cám dỗ môi trường
+                    (bạn rủ đi chơi, tiếng
+                    tivi).</p></div></details><details><summary><span>Vũ khí Ma
+                    trận Eisenhower (4 Góc phần tư dựa trên Độ khẩn cấp &amp;
+                    Tầm quan trọng).</span></summary><div class="ab"><div
+                    class="qg"><p class="quad q1"><b>Góc 1 (Gấp &amp; Quan trọng
+                        - Khủng hoảng):</b> Deadline sát nút, sự cố khẩn <b>LÀM
+                        NGAY</b>.</p><p class="quad q2"><b>Góc 2 (Không gấp
+                        &amp; Quan trọng - Phát triển):</b> Ôn thi sớm, tập thể
+                      dục, học Tiếng Anh <b>LÊN LỊCH</b> <i>(Góc cốt lõi giúp
+                        thành công không áp lực)</i>.</p><p
+                      class="quad q3"><b>Góc 3 (Gấp &amp; Không quan trọng -
+                        Phản ứng):</b> Tin nhắn linh tinh, điện thoại reo,
+                      shipper gọi <b>TỐI ƯU / ỦY QUYỀN</b>.</p><p
+                      class="quad q4"><b>Góc 4 (Không gấp &amp; Không quan trọng
+                        - Lãng phí):</b> Lướt TikTok/Reels vô thức, cày phim
+                      xuyên đêm <b>LOẠI
+                        BỎ</b>.</p></div></div></details><details><summary><span>Phân
+                    biệt: Giải trí hợp lý vs. Giải trí thiếu kiểm
+                    soát.</span></summary><div class="ab"><p><b>Giải trí hợp
+                      lý:</b> Là hoạt động đã được bạn chủ động chèn vào lịch
+                    trình ở Góc 2 như một phần thưởng xứng đáng (ví dụ:
+                    <i>"Sau khi hoàn thành 2 chu kỳ học, mình được lướt TikTok 15 phút"</i>).
+                    Lúc này, bạn có thể giải trí cực kỳ thoải mái mà không hề
+                    cảm thấy áy náy hay dằn vặt.</p><p><b>Giải trí thiếu kiểm
+                      soát:</b> Là khi hoạt động giải trí ở Góc 4 tự do chen
+                    ngang vào công việc ở Góc 1 hoặc Góc 2 đúng lúc bạn đang cần
+                    tập trung (ví dụ:
+                    <i>"Đang làm bài tập thì thấy thông báo YouTube liền bấm vào xem liên tục 2 tiếng"</i>
+                    khiến thời gian bốc
+                    hơi).</p></div></details><details><summary><span>Kỹ thuật
+                    "Thẩm vấn khẩn cấp" (3 Whys) để bóc tách nguyên nhân gốc rễ
+                    của trì hoãn.</span></summary><div class="ab"><p><b>Mục
+                      đích:</b> Giúp bóc tách và tìm ra nguyên nhân gốc rễ phía
+                    sau hành vi trì hoãn, bởi phần lớn việc trì hoãn không đến
+                    từ sự lười biếng hay kém quản lý thời gian mà xuất phát từ
+                    các yếu tố tâm lý.</p><h5 class="hs"><b>Quy trình 3 bước đặt
+                      câu hỏi (Ví dụ minh họa)</b></h5><p class="li"><b>Biểu
+                      hiện bề nổi:</b> Hôm qua tôi lướt TikTok 2 tiếng thay vì
+                    viết luận.</p><p class="li"><b>Tại sao lần 1:</b> Vì mở file
+                    ra thấy khó quá, không biết viết gì.</p><p class="li"><b>Tại
+                      sao lần 2:</b> Vì đề bài chung chung, chưa biết bắt đầu từ
+                    đâu.</p><p class="li">*<i>Tại sao lần 3 (Nguyên nhân
+                      gốc):</i> Vì mục tiêu quá lớn gây quá tải tâm lý và bản
+                    thân sợ viết ra không hay / sợ thất
+                    bại.</p></div></details></div><h4 class="lab rv">Học liệu &
+              Công cụ đi kèm:</h4><div class="mats"><div
+                class="mt rv"><p>Digital novel:
+                  <i>"Sherlock Holmes &amp; Bí Ẩn 5 Giờ Biến Mất"</i>.</p></div><div
+                class="mt rv"><p>Template in sẵn: Bảng phân loại Ma trận
+                  Eisenhower cá nhân &amp; Mẫu To-do list chuẩn.</p><p>Bảng phân
+                  loại Ma trận Eisenhower: <a
+                    href="https://www.vertex42.com/ExcelTemplates/eisenhower-matrix.html"
+                    target="_blank"
+                    rel="noopener">https://www.vertex42.com/ExcelTemplates/eisenhower-matrix.html</a></p><p>Mẫu
+                  To-do list: <a
+                    href="https://www.canva.com/templates/s/to-do-list/"
+                    target="_blank"
+                    rel="noopener">https://www.canva.com/templates/s/to-do-list/</a></p></div></div></div></section><section
+          class="ss" id="s3" data-c="thuy" style="--c:var(--thuy)"><div
+            class="w"><div class="sh rv"><span class="no">3</span><div><div
+                  class="pre">Buổi 3:</div><h2>Kiến trúc sư Thời gian Số (Google
+                  Calendar &amp; Task Apps)</h2></div><svg class="sp big"
+                viewBox="0 0 100 100"><use href="#sp-thuy" /></svg></div>
+            <h4 class="lab rv">Nội dung hiển thị:</h4><div
+              class="acc rv"><details><summary><span>Hướng dẫn phối hợp bộ đôi:
+                    <b>Google Calendar</b> (Quản lý thời gian/Khóa khung giờ) +
+                    <b>Task App</b> (Quản lý tác vụ/Chia nhỏ
+                    việc).</span></summary><div class="ab"><h5><b>Quy trình xếp
+                      khối tuần trực quan:</b></h5><p class="li">Khóa các khối
+                    cố định trước (lịch học trên trường, ca làm thêm, giờ ngủ
+                    nghỉ).</p><p class="li">Rải đều các khối tự học ngắn trong
+                    tuần (ưu tiên xếp môn khó hoặc ít thích nhất vào khung giờ
+                    sáng sớm khi não tỉnh táo nhất).</p><p class="li">Luôn chừa
+                    Khối "MỞ" (Buffer Block) và giờ giải trí/vận động để lịch
+                    trình có
+                    "khoảng thở".</p></div></details><details><summary><span>Công
+                    thức 3 – 3 – 2 &amp; Tích hợp Mã màu Eisenhower vào Calendar
+                    (Đỏ, Xanh lá, Xám, Vàng).</span></summary><div
+                  class="ab"><p><b>Công thức 3 – 3 – 2:</b> Gồm 3 cam kết cố
+                    định – 3 nhiệm vụ quan trọng – 2 khoảng thời gian bảo
+                    vệ.</p><h5><b>Mã màu Ma trận Eisenhower (Color-coding) trên
+                      lịch:</b></h5><p class="li"><b>Màu Đỏ (Góc 1):</b>
+                    Deadline gấp &amp; quan trọng, lịch thi.</p><p
+                    class="li"><b>Màu Xanh lá (Góc 2):</b> Khối tự học môn khó,
+                    làm bài tập lớn, rèn luyện bản thân.</p><p class="li"><b>Màu
+                      Xám:</b> Các cam kết cố định (đi học, đi làm).</p><p
+                    class="li"><b>Màu Vàng:</b> Khối "MỞ" dự phòng (Buffer
+                    Block) &amp; khoảng thời gian bảo vệ (nghỉ ngơi, thể
+                    thao).</p></div></details><details><summary><span>Checklist
+                    "3 Phút Dọn dẹp Không gian số" (Digital
+                    Minimalism).</span></summary><div class="ab"><p><b>Tắt thông
+                      báo rác:</b> Vào phần Cài đặt (Settings) Thông báo
+                    (Notifications), tắt toàn bộ thông báo đẩy của mạng xã hội,
+                    game, ứng dụng mua sắm (thuộc Góc 3 &amp; Góc 4), chỉ giữ
+                    lại thông báo của Google Calendar và liên lạc khẩn
+                    cấp.</p><p><b>Dọn dẹp màn hình chính (Home Screen):</b> Đưa
+                    Widget Google Calendar và To-Do List ra trang đầu tiên của
+                    điện thoại; cất các app giải trí vào sâu trong thư mục ở
+                    trang cuối.</p><p><b>Thiết lập Focus Mode:</b> Cài đặt tự
+                    động bật chế độ Không làm phiền theo đúng khung giờ của các
+                    khối tự học màu Xanh
+                    lá.</p></div></details><details><summary><span>Công thức
+                    Phản hồi 3 phần (1 Điểm tốt + 1 Vấn đề + 1 Gợi
+                    ý).</span></summary><div class="ab"><p>Khi kiểm tra chéo cấu
+                    trúc lịch của nhau, học viên sử dụng công thức phản hồi gồm
+                    3 phần:</p><p class="li"><b>01 Điểm tốt (What’s
+                      working):</b> Khen một điểm thiết lập chuẩn (ví dụ:
+                    <i>"Bạn phân mã màu Eisenhower rất rõ và đã xếp môn khó vào sáng thứ 3"</i>).</p><p
+                    class="li"><b>01 Vấn đề cần cải thiện (What needs
+                      improvement):</b> Chỉ ra lỗ hổng cụ thể (ví dụ:
+                    <i>"Tối thứ 5 bạn xếp khối tự học 4 tiếng liền không có khoảng nghỉ"</i>).</p><p
+                    class="li"><b>01 Gợi ý hành động tiếp theo (Next step):</b>
+                    Đề xuất cách sửa trực tiếp trên app (ví dụ:
+                    <i>"Hãy tách khối đó làm đôi và chèn thêm 1 khối MỞ màu vàng"</i>).</p></div></details></div><h4
+              class="lab rv">Học liệu & Công cụ đi kèm:</h4><div
+              class="mats"><div class="mt rv"><p>Bộ Guideline &amp; Mẫu Google
+                  Calendar tích hợp sẵn mã màu.</p></div><div
+                class="mt rv"><p>Hướng dẫn thiết lập Notion / TickTick /
+                  Microsoft To-Do.</p></div></div></div></section><section
+          class="ss" id="s4" data-c="tho" style="--c:var(--tho)"><div
+            class="w"><div class="sh rv"><span class="no">4</span><div><div
+                  class="pre">Buổi 4:</div><h2>Thí nghiệm Pomodoro – Công thức
+                  Tập trung</h2></div><svg class="sp big"
+                viewBox="0 0 100 100"><use href="#sp-tho" /></svg></div>
+            <h4 class="lab rv">Nội dung hiển thị:</h4><div
+              class="acc rv"><details><summary><span>Nguyên lý Pomodoro (25 phút
+                    tập trung – 5 phút nghỉ) &amp; Chu trình Plan – Monitor –
+                    Evaluate.</span></summary><div class="ab"><p><b>Công thức
+                      chuẩn do Francesco Cirillo đề xuất:</b> Tập trung làm việc
+                    trong <b>25 phút</b>, sau đó nghỉ ngắn <b>5 phút</b>. Sau
+                    khoảng 4 phiên làm việc, có thể nghỉ dài hơn từ 15–30 phút
+                    tùy nhu cầu.</p><p><b>Nguyên tắc cốt lõi:</b> Phải xác định
+                    rõ nhiệm vụ trước khi bấm giờ, cố gắng chỉ làm nhiệm vụ đó
+                    trong phiên và sử dụng thời gian nghỉ hợp lý. Thay vì ghi
+                    mục tiêu chung chung (như <i>"học tiếng Anh"</i>), hãy đặt
+                    mục tiêu cụ thể (như
+                    <i>"làm xong 10 câu bài tập ngữ pháp"</i>).</p><div
+                    class="slot has-video"
+                    data-yt="https://www.youtube.com/watch?v=P6tBXDyOEDs"
+                    data-label></div></div></details><details><summary><span>Kỹ
+                    thuật "Cách ly" tác nhân gây nhiễu (Ghi ra giấy ➔ Gạt sang
+                    bên ➔ Tiếp tục).</span></summary><div class="ab"><p>Khi đang
+                    chạy phiên Pomodoro mà chợt nhớ ra việc khác hoặc có suy
+                    nghĩ xao nhãng, hãy ghi nhanh việc đó ra một tờ giấy note để
+                    xử lý sau và tiếp tục tập trung vào bài đang
+                    làm</p><p><i>Nhóm chat liên tục báo tin nhắn:</i> Để đến giờ
+                    nghỉ mới kiểm tra, không mở giữa chừng.</p><p><i>Bài tập quá
+                      khó muốn bỏ cuộc:</i> Chia nhỏ bài tập thành từng phần nhỏ
+                    hơn để dễ giải quyết.</p><p><i>Có việc gia đình đột
+                      xuất:</i> Tạm dừng phiên, ghi nhận tiến độ hiện tại để khi
+                    quay lại có thể tiếp tục
+                    ngay.</p></div></details><details><summary><span>Hướng dẫn
+                    điều chỉnh nhịp Pomodoro phù hợp với cá nhân: Mỗi người tự
+                    chọn một nhiệm vụ thực tế cần hoàn thành trong tuần tới, ghi
+                    rõ thời gian thực hiện, số lượng phiên Pomodoro dự kiến và
+                    cách sắp xếp thời gian nghỉ ngơi giữa các phiên. Kế hoạch
+                    này sẽ được đồng bộ trực tiếp với lịch tuần trên Google
+                    Calendar đã xây dựng ở Buổi 3.</span></summary><div
+                  class="ab"></div></details></div><h4 class="lab rv">Học liệu &
+              Công cụ đi kèm:</h4><div class="mats"><div class="mt rv"><p>Phiếu
+                  thực hành <i>"Phòng thí nghiệm tập trung"</i>.</p></div><div
+                class="mt rv"><p>Bảng theo dõi mức độ tập trung trước và sau
+                  phiên học.</p></div></div></div></section><section class="ss"
+          id="s5" data-c="moc" style="--c:var(--moc)"><div class="w"><div
+              class="sh rv"><span class="no">5</span><div><div class="pre">Buổi
+                  5:</div><h2>Thực hành Pomodoro &amp; Đo lường Hiệu
+                  quả</h2></div><svg class="sp big" viewBox="0 0 100 100"><use
+                  href="#sp-moc" /></svg></div>
+            <h4 class="lab rv">Nội dung hiển thị:</h4><div
+              class="acc rv"><details><summary><span>Các bước chuẩn bị cho một
+                    phiên Pomodoro chuẩn chỉnh.</span></summary><div
+                  class="ab"></div></details><details><summary><span>Nhật ký tự
+                    đánh giá &amp; So sánh kết quả giữa các lần thực
+                    hành.</span></summary><div
+                  class="ab"></div></details></div><h4 class="lab rv">Học liệu &
+              Công cụ đi kèm:</h4><div class="mats"><div class="mt rv"><p>Phiếu
+                  theo dõi kết quả thực hành Pomodoro.</p></div><div
+                class="mt rv"><p>Danh sách đề xuất các App hỗ trợ tập trung
+                  (Forest, Focus
+                  To-Do).</p></div></div></div></section></div><div class="page"
+        data-page="tools"><section class="pt" data-c="thuy"><div class="w"><div
+              class="sh2 rv"><h2>Trang Công cụ Tương tác Trực tuyến (Interactive
+                Web Tools)</h2></div><p class="lead rv">Để giúp sinh viên thực
+              hành trực tiếp ngay trên trang web mà không cần in
+              giấy:</p></div></section><section class="tsec" data-c="kim"
+          id="tool-xu" style="--c:var(--kim)"><div class="w"><article
+              class="tool rv"><h3><b>"Xếp 24 Đồng xu" (Time-Coin
+                  Allocator)</b></h3><p class="td">Cho phép người dùng kéo thả
+                24 đồng xu vào các khối: Học tập, Sinh hoạt, Buffer Block, Giải
+                trí.</p><div id="xu-tb"></div></article></div></section><section
+          class="tsec" data-c="hoa" id="tool-eisenhower"
+          style="--c:var(--hoa)"><div class="w"><article
+              class="tool rv"><h3><b>Sơ đồ Kéo-Thả Ma trận Eisenhower</b></h3><p
+                class="td">Nhập các đầu việc trong ngày và kéo thả vào 4 ô (Làm
+                ngay, Lên lịch, Ủy quyền, Loại bỏ).</p><div
+                id="eis-tb"></div></article></div></section><section
+          class="tsec" data-c="thuy" id="tool-pomodoro"
+          style="--c:var(--thuy)"><div class="w"><article
+              class="tool rv"><h3><b>Đồng hồ Pomodoro Online (Integrated
+                  Timer)</b></h3><p class="td">Bộ đếm giờ Pomodoro 25/5 phút
+                tích hợp trực tiếp trên Web, có kèm âm thanh tập trung (Lofi /
+                White Noise / Tiếng mưa) và nút "Nhật ký chen ngang" để ghi
+                nhanh suy nghĩ xao nhãng.</p><div
+                id="pom-tb"></div></article></div></section></div><div
+        class="page" data-page="dl"><section data-c="moc"><div class="w"><div
+              class="sh2 rv"><h2>Trang Kho Tài nguyên &amp; Tải về (Download
+                Center)</h2></div><div class="dlg"><article class="dlc rv"
+                style="--c:var(--kim)"><svg class="sp"
+                  viewBox="0 0 100 100"><use href="#sp-kim" /></svg><h3>Tệp
+                  Slide bài giảng</h3><p>Trọn bộ Slide 5 buổi học.</p><a
+                  class="dlb" data-dl="slide" aria-disabled="true" href="#"
+                  aria-label="⬇">⬇</a></article><article class="dlc rv"
+                style="--c:var(--hoa)"><svg class="sp"
+                  viewBox="0 0 100 100"><use href="#sp-hoa" /></svg><h3>Học liệu
+                  số &amp; Sáng tạo</h3><p>Series Podcast/Video hướng dẫn.</p><a
+                  class="dlb" data-dl="digital" aria-disabled="true" href="#"
+                  aria-label="⬇">⬇</a></article><article class="dlc rv"
+                style="--c:var(--moc)"><svg class="sp"
+                  viewBox="0 0 100 100"><use href="#sp-moc" /></svg><h3>File Mẫu
+                  (Templates)</h3><p>File Excel/Notion Master Plan, Mẫu Google
+                  Calendar (.ics) import sẵn, Phiếu in PDF.</p><a class="dlb"
+                  data-dl="templates" aria-disabled="true" href="#"
+                  aria-label="⬇">⬇</a></article></div></div></section></div></main><footer><div
+        class="w"><svg class="sp" viewBox="0 0 100 100"><use
             href="#sp-kim" /></svg><svg class="sp" viewBox="0 0 100 100"><use
             href="#sp-moc" /></svg><svg class="sp" viewBox="0 0 100 100"><use
             href="#sp-thuy" /></svg><svg class="sp" viewBox="0 0 100 100"><use
             href="#sp-hoa" /></svg><svg class="sp" viewBox="0 0 100 100"><use
             href="#sp-tho" /></svg><p>Tên chương trình sinh hoạt đồng đẳng: TIME
           SMART · Tên lớp: MKT2116 · Kỳ học: Fall 2026 · Tên nhóm dự án: Ngũ
-          hành</p></div></footer>
-    <script>/* ====== CHỈNH Ở ĐÂY: dán link vào, để "" nếu chưa có ====== */
+          hành</p></div></footer><script>/* ====== CHỈNH Ở ĐÂY: dán link vào, để "" nếu chưa có ====== */
 const CONFIG={
-  registerUrl:"https://forms.gle/7DCJ1GCqa4EstjF18",                       // link Google Form (có link thì nút ✎ trên thanh menu sẽ hiện)
-  introVideo:"https://drive.google.com/file/d/1wPCP2M1C24TmtdWAGdIQE40Y_ar0A19e/view?usp=sharing",   // video giới thiệu dự án
-  media:{1:"",2:"",3:"",4:"",5:""},     // link video (Google Drive/YouTube) hoặc ảnh cho từng buổi
+  registerUrl:"https://forms.gle/7DCJ1GCqa4EstjF18",                    // link Google Form
+  introVideo:"https://drive.google.com/file/d/1wPCP2M1C24TmtdWAGdIQE40Y_ar0A19e/view?usp=sharing",                   // video giới thiệu dự án & nhóm
+  demo:"",                              // sản phẩm demo (google calendar): link video/ảnh
+  downloads:{slide:"",digital:"",templates:""}   // link tải: slide / học liệu số & sáng tạo / file mẫu
 };
+
 /* ========================================================== */
-const DT=["2026-10-20T07:30:00+07:00", "2026-10-23T10:00:00+07:00", "2026-10-27T07:30:00+07:00", "2026-10-30T10:00:00+07:00", "2026-11-01T19:30:00+07:00"],CAT=["Khối Học tập", "Khối Ngủ nghỉ", "Khối Ăn uống/Sinh hoạt", "Khối Vận động", "Khối Giải trí/Bạn bè", "Buffer Block"],RULE="Bắt buộc có khối dự phòng (Buffer Block): Trong Time-Blocking, luôn chừa ít nhất 1-2 khối thời gian trống gọi là Buffer Block để dự phòng và xử lý việc phát sinh",WIN="Nghỉ ngơi có kế hoạch mới là đỉnh cao của quản lý thời gian.",GT="THỜI GIAN LÀ TIỀN BẠC – 24 ĐỒNG XU",MODES=["25 phút", "5 phút"],PT="Pomodoro",CDH="Ngày, giờ thực hiện";
+const DT=["2026-10-20T07:30:00+07:00", "2026-10-23T10:00:00+07:00", "2026-10-27T07:30:00+07:00", "2026-10-30T10:00:00+07:00", "2026-11-01T19:30:00+07:00"],RULE="Khối dự phòng (Buffer Block): Bắt buộc chừa 1–2 khối thời gian trống trong ngày để hấp thụ các sự cố/biến cố bất ngờ (xe hỏng, deadline đột xuất...).",ZC=["Học tập", "Sinh hoạt", "Buffer Block", "Giải trí"],ZE={"ph": "Nhập các đầu việc trong ngày", "z": [["Làm ngay", "Góc 1 (Gấp &amp; Quan trọng - Khủng hoảng)"], ["Lên lịch", "Góc 2 (Không gấp &amp; Quan trọng - Phát triển)"], ["Ủy quyền", "Góc 3 (Gấp &amp; Không quan trọng - Phản ứng)"], ["Loại bỏ", "Góc 4 (Không gấp &amp; Không quan trọng - Lãng phí)"]]};
 const EL=["kim","hoa","thuy","tho","moc"],ALL=["kim","moc","thuy","hoa","tho"];
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],V=n=>`var(--${n})`;
 const emb=u=>u.replace(/\/view.*$/,"/preview").replace(/watch\?v=/,"embed/").replace("youtu.be/","www.youtube.com/embed/");
-/* sticker burst (nối các thành phần với nhau) */
 function burst(x,y){for(let i=0;i<14;i++){const e=document.createElement("i");e.className="cf";const a=Math.random()*6.28,r=60+Math.random()*90;e.style.cssText=`left:${x}px;top:${y}px;--x:${Math.cos(a)*r}px;--y:${Math.sin(a)*r-60}px;background:${V(ALL[i%5])}`;document.body.appendChild(e);setTimeout(()=>e.remove(),950)}}
 const mid=el=>{const r=el.getBoundingClientRect();return[r.left+r.width/2,r.top+r.height/2]};
-function pulse(n){}
-function go(n){const s=$("#s"+n);s.scrollIntoView();s.classList.remove("fl");void s.offsetWidth;s.classList.add("fl");setTimeout(()=>pulse(n),500)}
-document.addEventListener("click",e=>{
-  const g=e.target.closest("[data-go]");if(g){burst(...mid(g));go(+g.dataset.go);return}
-  const sp=e.target.closest(".sp");if(sp){sp.classList.remove("pop");void sp.getBoundingClientRect();sp.classList.add("pop");burst(...mid(sp))}
-});
-document.addEventListener("keydown",e=>{if(e.key==="Enter"&&e.target.dataset.go)go(+e.target.dataset.go)});
-/* hero: đồng xu rơi */
+document.addEventListener("click",e=>{const sp=e.target.closest(".sp");if(sp){sp.classList.remove("pop");void sp.getBoundingClientRect();sp.classList.add("pop");burst(...mid(sp))}});
 for(let i=0;i<16;i++){const c=document.createElement("i");c.className="fc";c.style.cssText=`--l:${Math.random()*100}%;--s:${14+Math.random()*22}px;--t:${5+Math.random()*6}s;--dl:${-Math.random()*8}s;background:${V(ALL[i%5])}`;$("#fall").appendChild(c)}
-/* đếm ngược buổi tiếp theo */
 function tick(){const now=Date.now(),i=DT.findIndex(d=>new Date(d)>now);if(i<0){$("#cdn").textContent="✓";$("#cdt").textContent="";return}
  $("#cdn").textContent=i+1;$("#cdn").style.setProperty("--c",V(EL[i]));let d=Math.floor((new Date(DT[i])-now)/1e3);const p=[86400,3600,60,1].map(k=>{const x=Math.floor(d/k);d%=k;return String(x).padStart(2,"0")});$("#cdt").textContent=p.join(" : ")}
 tick();setInterval(tick,1000);
-/* hiện dần khi cuộn */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
 $$(".rv").forEach((el,i)=>{el.style.setProperty("--d",(i%4)*.08+"s");io.observe(el)});
-/* đổi màu cả trang theo buổi đang xem + thanh tiến trình + rail */
-const secs=$$("[data-c]");let cur="kim";
-function spy(){const y=innerHeight*.4;let c="kim",k=0;secs.forEach(s=>{const r=s.getBoundingClientRect();if(r.top<y&&r.bottom>y){c=s.dataset.c;if(s.id[0]=="s"&&s.id.length==2)k=+s.id[1]}});
- if(c!==cur){cur=c;document.body.style.setProperty("--acc",V(c))}
- $$("#rail button").forEach(b=>b.classList.toggle("on",+b.dataset.go===k));
- const h=document.documentElement,p=scrollY/(h.scrollHeight-innerHeight||1);$("#pg").style.width=p*100+"%";}
-addEventListener("scroll",spy,{passive:true});spy();
-/* tab 1.1 / 1.2 / 1.3 */
-$$(".ss").forEach(s=>{const T=$$(`#${s.id} .tab`),Pn=$$(`#${s.id} .panel`);T.forEach(t=>t.onclick=()=>{T.forEach(x=>x.classList.toggle("on",x==t));Pn.forEach((p,i)=>p.classList.toggle("on",i==+t.dataset.t));burst(...mid(t))})});
-/* chọn cột người dạy / người học (điện thoại) */
-$$(".seg").forEach(sg=>{const cols=sg.nextElementSibling;sg.querySelectorAll(".sgb").forEach(b=>b.onclick=()=>{sg.querySelectorAll(".sgb").forEach(x=>x.classList.toggle("on",x==b));cols.dataset.v=b.dataset.v})});
-/* thanh thời gian → mở tiến trình → nhảy tới bước */
-$$(".sg").forEach(b=>b.onclick=()=>{const [n,i]=b.dataset.g.split("-");const sec=$("#s"+n);sec.querySelector('.tab[data-t="2"]').click();const st=$(`#st${n}-${i}`);st.open=true;st.scrollIntoView({block:"center"});st.classList.remove("pulse");void st.offsetWidth;st.classList.add("pulse");pulse(+n)});
-/* mỗi bước sáng lên khi tới */
-const so=new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle("in",e.isIntersecting&&e.boundingClientRect.top<innerHeight*.75)),{threshold:.2});$$("details.st").forEach(d=>so.observe(d));
-/* ô trống video / ảnh */
-$$(".slot").forEach(el=>{const u=el.dataset.intro?CONFIG.introVideo:CONFIG.media[el.dataset.m];if(u&&!/\/folders\//.test(u)&&!/\.(png|jpe?g|webp|gif|svg)(\?|$)/i.test(u))el.classList.add("has-video");el.innerHTML=u?(/\/folders\//.test(u)?`<a class="btn" href="${u}" target="_blank" rel="noopener">▶ Xem video giới thiệu ↗</a>`:/\.(png|jpe?g|webp|gif|svg)(\?|$)/i.test(u)?`<img src="${u}" alt="" loading="lazy">`:`<button class="vf" type="button" data-src="${emb(u)}" aria-label="Phát video"><span>▶</span>Bấm để xem video</button>`):`<div><b>＋</b>${el.dataset.label}</div>`});
-if(CONFIG.registerUrl){const r=$("#reg");r.href=CONFIG.registerUrl;r.target="_blank";r.rel="noopener";r.hidden=false;$$("[data-reg]").forEach(a=>{a.href=CONFIG.registerUrl;a.target="_blank";a.rel="noopener"})}
-/* bấm vào buổi 1 → mới hiện mục 24 đồng xu */
-(function(){const c=$("#s1"),x=$("#xu");if(!c||!x)return;
-const open=()=>{const first=x.hidden;x.hidden=false;if(first){x.classList.add("show");burst(...mid(c))}x.scrollIntoView({behavior:"smooth",block:"start"})};
-c.addEventListener("click",open);
-c.addEventListener("keydown",e=>{if(e.key==="Enter"&&e.target===c)open()})})();
-/* trò chơi 24 đồng xu */
-(function(){const g=$("#game");if(!g)return;let a=Array(24).fill(-1),sel=0,done=false;const col=["kim","thuy","tho","moc","hoa","buf"];
- g.innerHTML=`<h3>${GT}</h3><div class="gm"><div class="coins" id="gco"></div><div class="left" id="gl">24</div></div><div class="gc" id="gch"></div><div class="rule" id="gru">${RULE}</div>`;
- function draw(){$("#gco").innerHTML=a.map((v,i)=>`<button class="coin ${v>=0?"on":""}" data-i="${i}" style="--c:${v>=0?V(col[v]):"#fff"}">${i+1}</button>`).join("");
-  $("#gch").innerHTML=CAT.map((k,i)=>`<button class="chip ${i==sel?"on":""}" data-k="${i}" style="--c:${V(col[i])}"><i></i>${k} · ${a.filter(x=>x==i).length}</button>`).join("");
-  const left=a.filter(x=>x<0).length,buf=a.filter(x=>x==5).length,ru=$("#gru");$("#gl").textContent=left;ru.className="rule";
-  if(!left){if(buf){ru.textContent=WIN;ru.classList.add("win");if(!done){done=true;burst(...mid($("#gl")));pulse(1)}}else{ru.textContent=RULE;void ru.offsetWidth;ru.classList.add("shk");done=false}}else{ru.textContent=RULE;done=false}}
- g.onclick=e=>{const c=e.target.closest(".coin"),h=e.target.closest(".chip");if(c){const i=+c.dataset.i;a[i]=a[i]==sel?-1:sel;draw()}else if(h){sel=+h.dataset.k;draw();const n=$("#gch .chip.on");n.classList.add("pu")}};draw()})();
-/* đồng hồ Pomodoro */
-$$(".pomo").forEach(p=>{const sp=p.dataset.sp,C=2*Math.PI*82;let m=0,left=25*60,t=null,tot=25*60;
- p.style.setProperty("--c",V(sp));p.innerHTML=`<div class="ring"><svg class="r" viewBox="0 0 190 190"><circle class="bg" cx="95" cy="95" r="82"/><circle class="fg" cx="95" cy="95" r="82" stroke-dasharray="${C}"/></svg><b></b></div><div><h3>${PT}</h3><div class="pctl"><button class="pb" data-a="p" aria-label="play">▶</button><button class="pb" data-a="r" aria-label="reset">↺</button>${MODES.map((x,i)=>`<button class="chip ${i?"":"on"}" data-m="${i}">${x}</button>`).join("")}</div><svg class="sp" viewBox="0 0 100 100"><use href="#sp-${sp}"/></svg></div>`;
- const fg=p.querySelector(".fg"),b=p.querySelector("b"),pb=p.querySelector('[data-a="p"]');
- const show=()=>{b.textContent=String(Math.floor(left/60)).padStart(2,"0")+":"+String(left%60).padStart(2,"0");fg.style.strokeDashoffset=C*(1-left/tot)};
- const stop=()=>{clearInterval(t);t=null;p.classList.remove("run");pb.textContent="▶"};
- const reset=()=>{stop();tot=left=(m?5:25)*60;show()};
- p.onclick=e=>{const x=e.target.closest("button");if(!x)return;
-  if(x.dataset.m){m=+x.dataset.m;p.querySelectorAll(".chip").forEach(c=>c.classList.toggle("on",c==x));reset()}
-  else if(x.dataset.a=="r")reset();
-  else if(t)stop();else{p.classList.add("run");pb.textContent="⏸";t=setInterval(()=>{left--;show();if(left<=0){stop();burst(...mid(p.querySelector(".ring")));pulse(+p.closest(".ss").id[1]);left=tot;show()}},1000)}};show()});
-document.querySelectorAll("[data-vl]").forEach(a=>{if(CONFIG.introVideo){a.href=CONFIG.introVideo;a.target="_blank";a.rel="noopener"}else{a.parentElement.hidden=true}});
+/* đổi màu cả trang theo phần đang xem + thanh tiến trình */
+let cur="kim";
+function spy(){const y=innerHeight*.4;let c=null;$$("[data-c]").forEach(s=>{const r=s.getBoundingClientRect();if(r.height&&r.top<y&&r.bottom>y)c=s.dataset.c});
+ if(c&&c!==cur){cur=c;document.body.style.setProperty("--acc",V(c))}
+ const h=document.documentElement;$("#pg").style.width=scrollY/(h.scrollHeight-innerHeight||1)*100+"%"}
+addEventListener("scroll",spy,{passive:true});
+/* điều hướng 4 trang */
+const PG={"":"home","buoi-hoc":"hoc","cong-cu":"tools","tai-nguyen":"dl"},PC={home:"kim",hoc:"hoa",tools:"thuy",dl:"moc"};
+function route(){const h=location.hash.replace(/^#\/?/,"").split("/"),pg=PG[h[0]]||"home",sub=h[1];
+ $$(".page").forEach(p=>p.classList.toggle("on",p.dataset.page==pg));$$("nav .nl").forEach(a=>a.classList.toggle("on",a.dataset.p==pg));
+ const t=sub&&$(pg=="hoc"?"#s"+sub:"#tool-"+sub);cur=PC[pg];document.body.style.setProperty("--acc",V(cur));
+ if(t){setTimeout(()=>{t.scrollIntoView();const f=t.querySelector(".tool")||t;f.classList.remove("fl");void f.offsetWidth;f.classList.add("fl");burst(...mid(t.querySelector(".sh")||f))},80)}else scrollTo(0,0);spy()}
+addEventListener("hashchange",route);route();
+/* thanh lộ trình 5 bước */
+function openQ(n,b){$$(".rn").forEach((x,i)=>{x.classList.toggle("on",i==n-1);x.classList.toggle("done",i<n-1)});$$(".qp").forEach((q,i)=>q.classList.toggle("on",i==n-1));$("#rm").style.setProperty("--p",(n-1)/4);if(b)burst(...mid(b))}
+$$(".rn").forEach(b=>b.onclick=()=>openQ(+b.dataset.n,b));openQ(1);
+/* video / ảnh */
+$$(".slot").forEach(el=>{const u=el.dataset.intro?CONFIG.introVideo:el.dataset.demo?CONFIG.demo:el.dataset.yt;
+ const img=u&&/\.(png|jpe?g|webp|gif|svg)(\?|$)/i.test(u),fol=u&&/\/folders\//.test(u);if(u&&!img&&!fol)el.classList.add("has-video");
+ el.innerHTML=u?(fol?`<a class="btn" href="${u}" target="_blank" rel="noopener">▶ Xem video giới thiệu ↗</a>`:img?`<img src="${u}" alt="" loading="lazy">`:`<button class="vf" type="button" data-src="${emb(u)}" aria-label="Phát video"><span>▶</span>Bấm để xem video</button>`):`<div><b>＋</b>${el.dataset.label}</div>`});
 document.addEventListener("click",e=>{const b=e.target.closest(".vf");if(!b)return;b.parentElement.innerHTML=`<iframe src="${b.dataset.src}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`});
+if(CONFIG.registerUrl){const r=$("#reg");r.href=CONFIG.registerUrl;r.target="_blank";r.rel="noopener";r.hidden=false;$$("[data-reg]").forEach(a=>{a.href=CONFIG.registerUrl;a.target="_blank";a.rel="noopener"})}
+$$("[data-vl]").forEach(a=>{if(CONFIG.introVideo){a.href=CONFIG.introVideo;a.target="_blank";a.rel="noopener"}else a.parentElement.hidden=true});
+$$("[data-dl]").forEach(a=>{const u=CONFIG.downloads[a.dataset.dl];if(u){a.href=u;a.target="_blank";a.rel="noopener";a.removeAttribute("aria-disabled")}});
+/* kéo-thả (chuột + cảm ứng), chạm ô rồi chạm khối cũng được */
+function dnd(root,drop,tap,zone){let st=null;const zAt=e=>{const el=document.elementFromPoint(e.clientX,e.clientY),z=el&&el.closest("[data-zone]");return z&&root.contains(z)?z:null},clr=()=>root.querySelectorAll(".ov").forEach(x=>x.classList.remove("ov"));
+ root.addEventListener("pointerdown",e=>{const it=e.target.closest("[data-d]");if(!it||e.target.closest("[data-x]")||e.button>0)return;st={it,x:e.clientX,y:e.clientY,g:null,id:e.pointerId}});
+ addEventListener("pointermove",e=>{if(!st||e.pointerId!=st.id)return;if(!st.g&&Math.hypot(e.clientX-st.x,e.clientY-st.y)>6){st.g=st.it.cloneNode(true);st.g.classList.add("ghost");document.body.appendChild(st.g);st.it.style.opacity=.3}
+  if(st.g){st.g.style.left=e.clientX+"px";st.g.style.top=e.clientY+"px";clr();const z=zAt(e);z&&z.classList.add("ov")}});
+ const end=e=>{if(!st||e.pointerId!=st.id)return;const s=st;st=null;clr();if(s.g){s.g.remove();s.it.style.opacity="";const z=e.type=="pointerup"&&zAt(e);if(z)drop(s.it,z)}else if(e.type=="pointerup")tap(s.it)};
+ addEventListener("pointerup",end);addEventListener("pointercancel",end);
+ root.addEventListener("click",e=>{if(e.target.closest("[data-d]")||e.target.closest("[data-x]"))return;const z=e.target.closest("[data-zone]");if(z)zone(z)})}
+/* Xếp 24 Đồng xu */
+(function(){const r=$("#xu-tb");if(!r)return;const col=["kim","thuy","buf","hoa"];let a=Array(24).fill(-1),sel=-1,done=false;
+ r.innerHTML=`<div class="gm"><div class="pool" data-zone="-1" id="xp"></div><div class="left" id="xl">24</div><button class="pb" id="xr" aria-label="reset" style="--c:var(--kim)">↺</button></div><div class="zn" id="xz"></div><div class="rule" id="xu-r">${RULE}</div>`;
+ function draw(){const coin=i=>`<button class="cn${sel==i?" sel":""}" data-d="1" data-i="${i}" style="--c:${V(a[i]<0?"kim":col[a[i]])}">${i+1}</button>`;
+  $("#xp").innerHTML=a.map((v,i)=>v<0?coin(i):"").join("");
+  $("#xz").innerHTML=ZC.map((k,z)=>`<div class="z" data-zone="${z}" style="--c:${V(col[z])}"><h4>${k}<i>${a.filter(x=>x==z).length}</i></h4>${a.map((v,i)=>v==z?coin(i):"").join("")}</div>`).join("");
+  const left=a.filter(x=>x<0).length,buf=a.filter(x=>x==2).length,ru=$("#xu-r");$("#xl").textContent=left;ru.className="rule";
+  if(!left){if(buf){ru.classList.add("win");if(!done){done=true;burst(...mid($("#xl")))}}else{void ru.offsetWidth;ru.classList.add("shk");done=false}}else done=false}
+ const put=(i,z)=>{a[i]=+z.dataset.zone;sel=-1;draw()};
+ dnd(r,(it,z)=>put(+it.dataset.i,z),it=>{sel=sel==+it.dataset.i?-1:+it.dataset.i;draw()},z=>{if(sel>=0)put(sel,z)});
+ $("#xr").onclick=()=>{a.fill(-1);sel=-1;draw()};draw()})();
+/* Sơ đồ Kéo-Thả Ma trận Eisenhower */
+(function(){const r=$("#eis-tb");if(!r)return;const col=["hoa","moc","kim","buf"];let T=[],sel=-1;
+ r.innerHTML=`<div class="tin"><input id="ei" maxlength="80" placeholder="${ZE.ph}" aria-label="${ZE.ph}"><button class="pb" id="ea" aria-label="add" style="--c:var(--kim)">＋</button></div><div class="pool" data-zone="-1" id="ep"></div><div class="zn" id="ez"></div>`;
+ function draw(){const tk=(t,i)=>`<span class="tk${sel==i?" sel":""}" data-d="1" data-i="${i}">${t.t.replace(/</g,"&lt;")}<button data-x="${i}" aria-label="x">×</button></span>`;
+  $("#ep").innerHTML=T.map((t,i)=>t.z<0?tk(t,i):"").join("");
+  $("#ez").innerHTML=ZE.z.map((k,z)=>`<div class="z" data-zone="${z}" style="--c:${V(col[z])}"><h4><span>${k[0]}<small>${k[1]}</small></span><i>${T.filter(t=>t.z==z).length}</i></h4>${T.map((t,i)=>t.z==z?tk(t,i):"").join("")}</div>`).join("")}
+ const put=(i,z)=>{T[i].z=+z.dataset.zone;sel=-1;draw();if(T[i].z>=0)burst(...mid(z))};
+ const add=()=>{const v=$("#ei").value.trim();if(!v)return;T.push({t:v,z:-1});$("#ei").value="";draw()};
+ $("#ea").onclick=add;$("#ei").onkeydown=e=>{if(e.key==="Enter")add()};
+ r.addEventListener("click",e=>{const x=e.target.closest("[data-x]");if(x){T.splice(+x.dataset.x,1);sel=-1;draw()}});
+ dnd(r,(it,z)=>put(+it.dataset.i,z),it=>{sel=sel==+it.dataset.i?-1:+it.dataset.i;draw()},z=>{if(sel>=0)put(sel,z)});draw()})();
+/* Đồng hồ Pomodoro Online + âm thanh + nhật ký chen ngang */
+(function(){const p=$("#pom-tb");if(!p)return;const C=2*Math.PI*82,P={"m": ["25 phút", "5 phút"], "s": ["Lofi", "White Noise", "Tiếng mưa"], "l": "Nhật ký chen ngang", "ph": "ghi nhanh suy nghĩ xao nhãng"};let m=0,left=1500,tot=1500,t=null,snd=-1,ac=null,master=null,tm=[],log=[];
+ p.innerHTML=`<div class="pm2"><div class="ring" style="--c:var(--thuy)"><svg class="r" viewBox="0 0 190 190"><circle class="bg" cx="95" cy="95" r="82"/><circle class="fg" cx="95" cy="95" r="82" stroke-dasharray="${C}"/></svg><b></b></div><div><div class="pctl" style="--c:var(--thuy)"><button class="pb" data-a="p" aria-label="play">▶</button><button class="pb" data-a="r" aria-label="reset">↺</button>${P.m.map((x,i)=>`<button class="chip${i?"":" on"}" data-m="${i}" style="--c:var(--thuy)">${x}</button>`).join("")}</div><div class="pctl snd">${P.s.map((x,i)=>`<button class="chip" data-s="${i}" style="--c:var(--moc)">${x}</button>`).join("")}</div><div class="pctl"><button class="chip" data-l="1" style="--c:var(--kim)">${P.l}</button><svg class="sp" viewBox="0 0 100 100"><use href="#sp-thuy"/></svg></div></div></div><div class="lg" hidden><div class="tin"><input maxlength="120" placeholder="${P.ph}" aria-label="${P.ph}"><button class="pb" data-a="n" aria-label="add" style="--c:var(--kim)">＋</button></div><ul></ul></div>`;
+ const fg=p.querySelector(".fg"),b=p.querySelector(".ring b"),pb=p.querySelector('[data-a="p"]'),lg=p.querySelector(".lg"),lb=p.querySelector("[data-l]");
+ const show=()=>{b.textContent=String(Math.floor(left/60)).padStart(2,"0")+":"+String(left%60).padStart(2,"0");fg.style.strokeDashoffset=C*(1-left/tot)};
+ const stop=()=>{clearInterval(t);t=null;p.classList.remove("run");pb.textContent="▶"},reset=()=>{stop();tot=left=(m?5:25)*60;show()};
+ const AC=()=>{ac=ac||new(window.AudioContext||window.webkitAudioContext)();if(ac.state=="suspended")ac.resume();return ac};
+ const nb=c=>{const f=c.createBuffer(1,c.sampleRate*2,c.sampleRate),d=f.getChannelData(0);for(let i=0;i<d.length;i++)d[i]=Math.random()*2-1;return f};
+ const off=()=>{tm.forEach(clearInterval);tm=[];if(master){master.disconnect();master=null}};
+ function beep(){const c=AC();[0,.35].forEach(d=>{const o=c.createOscillator(),g=c.createGain();o.frequency.value=880;g.gain.setValueAtTime(.2,c.currentTime+d);g.gain.exponentialRampToValueAtTime(.001,c.currentTime+d+.3);o.connect(g);g.connect(c.destination);o.start(c.currentTime+d);o.stop(c.currentTime+d+.32)})}
+ function play(k){const c=AC();off();master=c.createGain();master.gain.value=.5;master.connect(c.destination);
+  const noise=(fn,g)=>{const s=c.createBufferSource();s.buffer=nb(c);s.loop=true;const gg=c.createGain();gg.gain.value=g;fn(s,gg);gg.connect(master);s.start();return gg};
+  if(k==1)noise((s,g)=>s.connect(g),.22);
+  else if(k==2){const g=noise((s,g)=>{const h=c.createBiquadFilter();h.type="highpass";h.frequency.value=900;const l=c.createBiquadFilter();l.type="lowpass";l.frequency.value=7000;s.connect(h);h.connect(l);l.connect(g)},.3);const o=c.createOscillator(),d=c.createGain();o.frequency.value=.15;d.gain.value=.08;o.connect(d);d.connect(g.gain);o.start()}
+  else{noise((s,g)=>{const h=c.createBiquadFilter();h.type="highpass";h.frequency.value=3500;s.connect(h);h.connect(g)},.02);const lp=c.createBiquadFilter();lp.type="lowpass";lp.frequency.value=1100;lp.connect(master);let n=0;const CH=[[220,261.6,329.6,392],[174.6,220,261.6,329.6],[261.6,329.6,392,493.9],[196,246.9,293.7,392]];
+   const chord=()=>{const t0=c.currentTime;CH[n++%4].forEach(f=>{const o=c.createOscillator(),g=c.createGain();o.type="triangle";o.frequency.value=f;g.gain.setValueAtTime(0,t0);g.gain.linearRampToValueAtTime(.12,t0+.4);g.gain.linearRampToValueAtTime(0,t0+3.4);o.connect(g);g.connect(lp);o.start(t0);o.stop(t0+3.5)})};chord();tm.push(setInterval(chord,3200))}}
+ const addLog=()=>{const i=lg.querySelector("input"),v=i.value.trim();if(!v)return;const d=new Date();log.push(`<li><small>${String(d.getHours()).padStart(2,"0")}:${String(d.getMinutes()).padStart(2,"0")}</small>${v.replace(/</g,"&lt;")}</li>`);lg.querySelector("ul").innerHTML=log.join("");lb.textContent=P.l+" · "+log.length;i.value=""};
+ lg.querySelector("input").onkeydown=e=>{if(e.key==="Enter")addLog()};
+ p.onclick=e=>{const x=e.target.closest("button");if(!x)return;
+  if(x.dataset.m){m=+x.dataset.m;p.querySelectorAll("[data-m]").forEach(c=>c.classList.toggle("on",c==x));reset()}
+  else if(x.dataset.s){const k=+x.dataset.s;p.querySelectorAll("[data-s]").forEach(c=>c.classList.remove("on"));if(snd==k){snd=-1;off()}else{snd=k;x.classList.add("on");play(k)}}
+  else if(x.dataset.l){lg.hidden=!lg.hidden;if(!lg.hidden)lg.querySelector("input").focus()}
+  else if(x.dataset.a=="n")addLog();
+  else if(x.dataset.a=="r")reset();
+  else if(t)stop();else{AC();p.classList.add("run");pb.textContent="⏸";t=setInterval(()=>{left--;show();if(left<=0){stop();beep();burst(...mid(p.querySelector(".ring")));left=tot;show()}},1000)}};show()})();
+/* truyện mở đầu: đọc từng chương */
+document.querySelectorAll(".story").forEach(st=>{const C=[...st.querySelectorAll(".ch-c")],Pl=[...st.querySelectorAll(".sp-p")],n=C.length,pv=st.querySelector('[data-sd="-1"]'),nx=st.querySelector('[data-sd="1"]'),cn=st.querySelector(".cnt");let i=0;
+ function go(k,hop){k=Math.max(0,Math.min(n-1,k));const dir=k>=i?1:-1;i=k;C.forEach((c,j)=>{c.classList.toggle("on",j==i);c.style.setProperty("--dir",dir)});Pl.forEach((p,j)=>{p.classList.toggle("on",j==i);p.classList.toggle("done",j<i)});
+  st.style.setProperty("--pr",(i+1)/n);st.querySelector(".sty-stage").scrollTop=0;pv.disabled=i==0;cn.textContent=(i+1)+"/"+n;
+  if(hop){const s=st.querySelector(".sp");s.classList.remove("pop");void s.getBoundingClientRect();s.classList.add("pop")}}
+ Pl.forEach((p,j)=>p.onclick=()=>go(j,1));pv.onclick=()=>go(i-1,1);nx.onclick=()=>{if(i==n-1)burst(...mid(nx));else go(i+1,1)};
+ st.addEventListener("keydown",e=>{if(e.key==="ArrowRight")go(i+1,1);if(e.key==="ArrowLeft")go(i-1,1)});
+ let x0=null;const sg=st.querySelector(".sty-stage");sg.addEventListener("pointerdown",e=>{x0=e.pointerType=="touch"?e.clientX:null});sg.addEventListener("pointerup",e=>{if(x0===null)return;const d=e.clientX-x0;x0=null;if(Math.abs(d)>70)go(i+(d<0?1:-1),1)});go(0)});
 </script></body></html>
